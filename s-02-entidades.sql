@@ -1,7 +1,9 @@
--- Autor: Tepal Briseño Hansel Yael Ugartechea González Luis Antonio
+-- Autor: Tepal Briseño Hansel Yael y Ugartechea González Luis Antonio
 -- Fecha: 28/11/2024
---Descripción: Creación las tablas del modelo relacional
+-- Descripción: Creación las tablas del modelo relacional
 
+prompt conectando con la pdb con el usuario tu_proy_admin
+connect tu_proy_admin/1234@htblugbd_s2
 
 --Tabla: Usuario
 
