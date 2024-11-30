@@ -239,7 +239,8 @@ create table clabe(
     vivienda_renta_id not null,
     constraint clabe_pk primary key(clabe_id),
     constraint clabe_vivienda_renta_id_fk foreign key(vivienda_renta_id)
-        references vivienda_renta(vivienda_renta_id)
+        references vivienda_renta(vivienda_renta_id),
+    constraint clabe_clabe_uk unique(clabe)
 )
 
 --Tabla: Renta
