@@ -58,7 +58,7 @@ create table vivienda (
     longitud varchar2(40) not null,
     direccion varchar2(64) not null, --Comentar si se aumenta el numero de caracteres
     estatus_vivienda_id not null,
-    usuario_dueño_id not null,
+    usuario_duenio_id not null,
     constraint vivienda_pk primary key(vivienda_id),
     constraint vivienda_estatus_vivienda_id_fk foreign key(estatus_vivienda_id) 
         references estatus_vivienda(estatus_vivienda_id),
@@ -80,7 +80,7 @@ create table imagen(
     imagen blob not null
     constraint imagen_vivienda_id_fk foreign key(vivienda_id) 
         references vivienda(vivienda_id),
-    constraint imagen_pk primary key(num_imagen, vivienda_id)
+    constraint imagen_pk primary key(vivienda_id,num_imagen)
 )
 
 --Tabla: Historico_Estatus_Vivienda
@@ -284,7 +284,7 @@ create table pago(
     mensualidades_restantes generated always as (240 - num_pago) virtual, --Hablar con ugarte si esta deacuerdo con esta columna
     constraint pago_vivienda_venta_id_fk foreign key(vivienda_venta_id)
         references vivienda_venta(vivienda_venta_id),
-    constraint pago_pk primary key(num_pago, vivienda_venta_id)
+    constraint pago_pk primary key(vivienda_venta_id, num_pago)
 )
 
 /*
