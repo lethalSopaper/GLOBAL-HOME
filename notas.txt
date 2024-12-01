@@ -1,0 +1,18 @@
+tabla temporal
+-- Resumen de ganancia para el usuario dueño de la vivienda
+-- procedimiento para generar esa tabla temporal(vemos)
+
+tabla temporal
+-- para el usuario dueño crear un resumen de calificaciones a partir de las encuestas
+-- procedimiento para generar la table temporal (vemos)
+
+-- tabla externa 
+-- se tiene una lista de posibles viviendas que se podran incorporar al sitio web, 
+-- el usuario admin podra consulatr dichas propiedades desde la pagina pero no se cargan a la base de datos
+-- si no que se leeran desde un csv
+
+--hacer un procedimienot para calcular la comision
+
+
+--trigger para verificar las contraseñas
+

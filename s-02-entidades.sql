@@ -17,6 +17,7 @@ create table usuario(
     contrasena varchar2(15) not null,
     constraint usuario_pk primary key(usuario_id),
     constraint usuario_email_uk unique(email),
+    constraint usuario_nombre_usuario_uk unique(nombre_usuario),
     constraint contrasena_chk check(length(contrasena) >= 8)
 )
 
@@ -274,7 +275,6 @@ create table compra(
     constraint compra_usuario_id_fk foreign key(usuario_id),
     constraint compra_pk primary key(vivienda_venta_id)
 )
---hacer un procedimienot para calcular la comision
 
 --Tabla: Pago
 

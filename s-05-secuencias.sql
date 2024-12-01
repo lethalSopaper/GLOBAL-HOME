@@ -16,7 +16,7 @@ create sequence usuario_seq
 
 -- Secuencia para la tabla Tarjeta
 
-create secuence tarjeta_seq
+create sequence tarjeta_seq
     start with 1
     increment by 1
     nomaxvalue
