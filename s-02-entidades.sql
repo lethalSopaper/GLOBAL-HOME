@@ -14,11 +14,11 @@ create table usuario(
     nombre varchar2(32) not null,
     apellido_paterno varchar2(32) not null,
     apellido_materno varchar2(32),
-    contrasena varchar2(15) not null,
+    contrasenia varchar2(15) not null,
     constraint usuario_pk primary key(usuario_id),
     constraint usuario_email_uk unique(email),
     constraint usuario_nombre_usuario_uk unique(nombre_usuario),
-    constraint contrasena_chk check(length(contrasena) >= 8)
+    constraint contrasenia_chk check(length(contrasenia) >= 8)
 )
 
 --Tabla: Tarjeta
