@@ -13,22 +13,22 @@ Servicios de vivienda:
 */
 
 insert into SERVICIO (servicio_id, nombre, descripcion, icono)
-values (1, 'Agua', 'Servicio de agua potable', 'icono_agua.png');
+values (1, 'Agua', 'Servicio de agua potable', EMPTY_BLOB());
 insert into SERVICIO (servicio_id, nombre, descripcion, icono)
-values (2, 'Luz', 'Servicio de electricidad', 'icono_luz.png');
+values (2, 'Luz', 'Servicio de electricidad', EMPTY_BLOB());
 insert into SERVICIO (servicio_id, nombre, descripcion, icono)
-values (3, 'Gas', 'Servicio de gas natural', 'icono_gas.png');
+values (3, 'Gas', 'Servicio de gas natural', EMPTY_BLOB());
 insert into SERVICIO (servicio_id, nombre, descripcion, icono)
-values (4, 'Internet', 'Servicio de internet', 'icono_internet.png');
+values (4, 'Internet', 'Servicio de internet', EMPTY_BLOB());
 insert into SERVICIO (servicio_id, nombre, descripcion, icono)
-values (5, 'Telefono', 'Servicio de telefonía', 'icono_telefono.png');
+values (5, 'Telefono', 'Servicio de telefonía', EMPTY_BLOB());
 insert into SERVICIO (servicio_id, nombre, descripcion, icono)
-values (6, 'Televisión por cable', 'Servicio de televisión por cable', 'icono_tv_cable.png');
+values (6, 'Televisión por cable', 'Servicio de televisión por cable', EMPTY_BLOB());
 insert into SERVICIO (servicio_id, nombre, descripcion, icono)
-values (7, 'Alberca', 'Servicio de alberca', 'icono_alberca.png');
+values (7, 'Alberca', 'Servicio de alberca', EMPTY_BLOB());
 insert into SERVICIO (servicio_id, nombre, descripcion, icono)
-values (8, 'Gimnasio', 'Servicio de gimnasio', 'icono_gimnasio.png');
+values (8, 'Gimnasio', 'Servicio de gimnasio', EMPTY_BLOB());
 insert into SERVICIO (servicio_id, nombre, descripcion, icono)
-values (9, 'Estacionamiento', 'Servicio de estacionamiento', 'icono_estacionamiento.png');
+values (9, 'Estacionamiento', 'Servicio de estacionamiento', EMPTY_BLOB());
 insert into SERVICIO (servicio_id, nombre, descripcion, icono)
-values (10, 'Seguridad', 'Servicio de seguridad', 'icono_seguridad.png');
+values (10, 'Seguridad', 'Servicio de seguridad', EMPTY_BLOB());
