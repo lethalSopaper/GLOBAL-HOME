@@ -51,7 +51,6 @@ create table vivienda (
     es_vacaciones boolean not null, 
     es_renta boolean not null,
     es_venta boolean not null,
-    descripcion varchar2(2000),
     capacidad_maxima number(2,0) not null,
     fecha_estatus date not null,
     latitud varchar2(15) not null, 
@@ -59,6 +58,7 @@ create table vivienda (
     direccion varchar2(128) not null, 
     estatus_vivienda_id not null,
     usuario_duenio_id not null,
+    descripcion varchar2(2000),
     constraint vivienda_pk primary key(vivienda_id),
     constraint vivienda_estatus_vivienda_id_fk foreign key(estatus_vivienda_id) 
         references estatus_vivienda(estatus_vivienda_id),
