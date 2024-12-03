@@ -11,7 +11,7 @@ create sequence usuario_seq
     nominvalue
     nocycle
     cache 20
-    noorder
+    order
 ;
 
 -- Secuencia para la tabla Tarjeta
@@ -23,7 +23,7 @@ create sequence tarjeta_seq
     nominvalue
     nocycle
     cache 20
-    noorder
+    order
 ;
 
 -- Secuencia para la tabla mensaje
@@ -35,7 +35,7 @@ create sequence mensaje_seq
     nominvalue
     nocycle
     cache 20
-    noorder
+    order
 ;
 
 -- Secuencia para la tabla vivienda
@@ -47,7 +47,7 @@ create sequence vivienda_seq
     nominvalue
     nocycle
     cache 20
-    noorder
+    order
 ;
 
 -- Secuencia para la tabla servicio
@@ -59,7 +59,7 @@ create sequence servicio_seq
     nominvalue
     nocycle
     cache 20
-    noorder
+    order
 ;
 
 -- Secuencia para la tabla servicio_vivienda
@@ -71,7 +71,7 @@ create sequence servicio_vivienda_seq
     nominvalue
     nocycle
     cache 20
-    noorder
+    order
 ;
 
 -- Secuencia para la tabla historico_estatus_vivienda
@@ -83,7 +83,7 @@ create sequence historico_estatus_vivienda_seq
     nominvalue
     nocycle
     cache 20
-    noorder
+    order
 ;
 
 -- Secuencia para la tabla favorito
@@ -95,7 +95,7 @@ create sequence favorito_seq
     nominvalue
     nocycle
     cache 20
-    noorder
+    order
 ;
 
 -- Secuencia para la tabla alquiler
@@ -107,7 +107,7 @@ create sequence alquiler_seq
     nominvalue
     nocycle
     cache 20
-    noorder
+    order
 ;
 
 -- Secuencia para la tabla encuesta
@@ -119,7 +119,7 @@ create sequence encuesta_seq
     nominvalue
     nocycle
     cache 20
-    noorder
+    order
 ;
 
 -- Secuencia para la tabla clabe
@@ -131,7 +131,7 @@ create sequence clabe_seq
     nominvalue
     nocycle
     cache 20
-    noorder
+    order
 ;
 
 --Secuencia para la tabla Renta
@@ -143,6 +143,6 @@ create sequence renta_seq
     nominvalue
     nocycle
     cache 20
-    noorder
+    order
 ;
 
