@@ -6,7 +6,7 @@ prompt Conectando con el usuario sys
 
 connect sys/system1@htblugbd_s2 as sysdba 
 
-prompt creato el rol_admin si es que existe
+prompt eliminando el rol_admin si es que existe
 drop role if exists rol_admin;
 prompt creando el rol_admin
 create role rol_admin;
@@ -19,7 +19,7 @@ grant create procedure to rol_admin;
 grant create synonym to rol_admin;
 grant create public synonym to rol_admin;
 
-prompt creado el rol_invitado si es que existe
+prompt eliminando el rol_invitado si es que existe
 drop role if exists rol_invitado;
 prompt creando el rol_invitado
 create role rol_invitado;

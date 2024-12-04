@@ -6,6 +6,7 @@ prompt conectando con la pdb con el usuario tu_proy_admin
 connect tu_proy_admin/1234@htblugbd_s2
 
 --Tabla: Usuario
+prompt Creando tabla usuario
 
 create table usuario(
     usuario_id number(10,0),
@@ -19,9 +20,10 @@ create table usuario(
     constraint usuario_email_uk unique(email),
     constraint usuario_nombre_usuario_uk unique(nombre_usuario),
     constraint contrasenia_chk check(length(contrasenia) >= 8)
-)
+);
 
 --Tabla: Tarjeta
+prompt Creando tabla tarjeta
 
 create table tarjeta(
     tarjeta_id number(10,0),
@@ -35,16 +37,18 @@ create table tarjeta(
     constraint tarjeta_usuario_id_fk foreign key(usuario_id) 
         references usuario(usuario_id),
     constraint tarjeta_mes_expiracion_chk check( mes_expiracion between 1 and 12)
-)
+);
 --Tabla: Estatus_Vivienda
+prompt Creando tabla estatus_vivienda
 
 create table estatus_vivienda(
     estatus_vivienda_id number(10,0),
     clave varchar2(10) not null,
     descripcion varchar2(128),
     constraint estatus_vivienda_pk primary key(estatus_vivienda_id)
-)
+);
 -- Tabla: Vivienda
+prompt Creando tabla vivienda
 
 create table vivienda (
     vivienda_id number (10,0),
@@ -70,20 +74,22 @@ create table vivienda (
         (es_vacaciones = false and es_renta = true and es_venta = false) or
         (es_vacaciones = false and es_renta = false and es_venta = true)
     )
-)
+);
 
 --Tabla: Imagen
+prompt Creando tabla imagen
 
 create table imagen(
     num_imagen number(2,0),
     vivienda_id not null,
-    imagen blob not null
+    imagen blob not null,
     constraint imagen_vivienda_id_fk foreign key(vivienda_id) 
         references vivienda(vivienda_id),
     constraint imagen_pk primary key(vivienda_id,num_imagen)
-)
+);
 
 --Tabla: Historico_Estatus_Vivienda
+prompt Creando tabla historico_estatus_vivienda
 
 create table historico_estatus_vivienda(
     historico_estatus_vivienda_id number(10,0),
@@ -95,9 +101,10 @@ create table historico_estatus_vivienda(
         references estatus_vivienda(estatus_vivienda_id),
     constraint historico_estatus_vivienda_vivienda_id_fk foreign key(vivienda_id)
         references vivienda(vivienda_id)
-)
+);
 
 --Tabla: Servicio
+prompt Creando tabla servicio
 
 create table servicio(
     servicio_id number(10,0),
@@ -105,9 +112,10 @@ create table servicio(
     descripcion varchar2(200),
     icono blob not null,
     constraint servicio_pk primary key(servicio_id)
-)
+);
 
 -- Tabla: Servicio_Vivienda
+prompt Creando tabla servicio_vivienda
 
 create table servicio_vivienda(
     servicio_vivienda_id number(10,0),
@@ -118,9 +126,10 @@ create table servicio_vivienda(
         references vivienda(vivienda_id),
     constraint servicio_vivienda_servicio_id_fk foreign key(servicio_id) 
         references servicio(servicio_id)
-)
+);
 
 -- Tabla: mensaje
+prompt Creando tabla mensaje
 
 create table mensaje(
     mensaje_id number(10,0),
@@ -128,7 +137,6 @@ create table mensaje(
     cuerpo varchar2(500) not null,
     leido boolean default false not null, 
     fecha_envio date default sysdate not null,
-    antiguedad_mensaje generated always as (trunc(sysdate) - trunc(fecha_envio)) virtual,
     usuario_id not null,
     vivienda_id not null,
     mensaje_respuesta_id,
@@ -139,48 +147,52 @@ create table mensaje(
         references vivienda(vivienda_id),
     constraint mensaje_mensaje_respuesta_id_fk foreign key(mensaje_respuesta_id)
         references mensaje(mensaje_id)
-)
+);
 
 --Tabla: Vivienda_vacaciones
-
+prompt Creando tabla vivienda_vacaciones
 create table vivienda_vacaciones(
     vivienda_vacaciones_id,
     disponible boolean default true not null, 
     max_dias number(3,0) not null,
-    costo_apartado (8,2) not null,
-    costo_dia (8,2) not null,
+    costo_apartado number(8,2) not null,
+    costo_dia number(8,2) not null,
+    costo_total_aproximado generated always as (costo_apartado + (costo_dia * max_dias)) virtual,
     constraint vivienda_vacaciones_vienda_vacaciones_id_fk foreign key(vivienda_vacaciones_id) 
         references vivienda(vivienda_id),
     constraint vivienda_vacaciones_pk primary key(vivienda_vacaciones_id)
-)
+);
 
 --Tabla: Vivienda_renta
+prompt Creando tabla vivienda_renta
 
 create table vivienda_renta(
     vivienda_renta_id,
     dia_pago number(2,0) not null,
-    renta_mensual (8,2) not null,
+    renta_mensual number(8,2) not null,
     constraint vivienda_renta_vivienda_renta_id_fk foreign key(vivienda_renta_id) 
         references vivienda(vivienda_id),
     constraint vivienda_renta_pk primary key(vivienda_renta_id)
-)
+);
 
 --Tabla: Vivienda_venta
+prompt Creando tabla vivienda_venta
 
 create table vivienda_venta(
-    vivienta_venta_id,
+    vivienda_venta_id,
     num_catastral varchar2(16) not null,
     folio_escritura varchar2(18) not null,
     avaluo_propiedad blob not null,
-    precio_inicial (11,2) not null,
+    precio_inicial number(11,2) not null,
     constraint vivienda_venta_vivienda_venta_id_fk foreign key(vivienda_venta_id) 
         references vivienda(vivienda_id),
     constraint vivienda_venta_pk primary key(vivienda_venta_id),
-    constraint vivienda_venta_num_castral_uk unique(num_castral),
+    constraint vivienda_venta_num_castral_uk unique(num_catastral),
     constraint vivienda_venta_folio_escritura_uk unique(folio_escritura)
-)
+);
 
 --Tabla: favorito
+prompt Creando tabla favorito
 
 create table favorito(
     favorito_id number(10,0),   
@@ -194,9 +206,10 @@ create table favorito(
     constraint favorito_vivienda_vacaciones_id_fk foreign key(vivienda_vacaciones_id)
         references vivienda_vacaciones(vivienda_vacaciones_id),
     constraint favorito_telefono_uk unique(telefono)
-)
+);
 
 --Tabla: Alquiler 
+prompt Creando tabla alquiler
 
 create table alquiler(
     alquiler_id number(10,0),
@@ -205,16 +218,17 @@ create table alquiler(
     fecha_fin date not null,
     duracion_alquiler generated always as (trunc(fecha_fin) - trunc(fecha_inicio)) virtual, 
     vivienda_vacaciones_id not null,
-    usuario_id not null
+    usuario_id not null,
     constraint alquiler_pk primary key(alquiler_id),
     constraint alquiler_vivienda_vacaciones_id_fk foreign key(vivienda_vacaciones_id)
         references vivienda_vacaciones(vivienda_vacaciones_id),
     constraint alquiler_usuario_id_fk foreign key(usuario_id)
         references usuario(usuario_id),
     constraint alquiler_folio_uk unique(folio)
-)
+);
 
 --Tabla: Encuesta
+prompt Creando tabla encuesta
 
 create table encuesta(
     encuesta_id number(10,0),
@@ -231,9 +245,10 @@ create table encuesta(
     constraint encuasta_calificacion_chk check(
         calificacion between 1 and 5
     )
-)
+);
 
 --Tabla: Clabe
+prompt Creando tabla clabe
 
 create table clabe(
     clabe_id number(10,0),
@@ -243,9 +258,10 @@ create table clabe(
     constraint clabe_vivienda_renta_id_fk foreign key(vivienda_renta_id)
         references vivienda_renta(vivienda_renta_id),
     constraint clabe_clabe_uk unique(clabe)
-)
+);
 
 --Tabla: Renta
+prompt Creando tabla renta
 
 create table renta(
     renta_id number(10,0),
@@ -260,23 +276,26 @@ create table renta(
     constraint renta_usuario_id_fk foreign key(usuario_id)
         references usuario(usuario_id),
     constraint renta_folio_contrato_uk unique(folio_contrato)
-)
+);
 
 --Tabla: Compra
+prompt Creando tabla compra
 
 create table compra(
     vivienda_venta_id,
     clabe_interbancaria numeric(18,0) not null,
-    precio_final (11,2) not null,
-    comision (8,2) not null,
+    precio_final number(11,2) not null,
+    comision number(8,2) not null,
     usuario_id not null,
     constraint compra_vivienda_venta_id_fk foreign key(vivienda_venta_id)
         references vivienda_venta(vivienda_venta_id),
-    constraint compra_usuario_id_fk foreign key(usuario_id),
+    constraint compra_usuario_id_fk foreign key(usuario_id)
+        references usuario(usuario_id),
     constraint compra_pk primary key(vivienda_venta_id)
-)
+);
 
 --Tabla: Pago
+prompt Creando tabla pago
 
 create table pago(
     num_pago number(10,0),
@@ -287,4 +306,4 @@ create table pago(
     constraint pago_vivienda_venta_id_fk foreign key(vivienda_venta_id)
         references vivienda_venta(vivienda_venta_id),
     constraint pago_pk primary key(vivienda_venta_id, num_pago)
-)
+);
