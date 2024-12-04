@@ -87,7 +87,6 @@ insert into HISTORICO_ESTATUS_VIVIENDA (historico_estatus_vivienda_id, fecha_est
 insert into HISTORICO_ESTATUS_VIVIENDA (historico_estatus_vivienda_id, fecha_estatus, estatus_vivienda_id, vivienda_id) values (historico_estatus_vivienda_seq.nextval, to_date('14-09-2023','dd-mm-yyyy'), 1, 44);
 insert into HISTORICO_ESTATUS_VIVIENDA (historico_estatus_vivienda_id, fecha_estatus, estatus_vivienda_id, vivienda_id) values (historico_estatus_vivienda_seq.nextval, to_date('03-11-2023','dd-mm-yyyy'), 4, 44);
 insert into HISTORICO_ESTATUS_VIVIENDA (historico_estatus_vivienda_id, fecha_estatus, estatus_vivienda_id, vivienda_id) values (historico_estatus_vivienda_seq.nextval, to_date('19-11-2023','dd-mm-yyyy'), 5, 44);
-
 insert into HISTORICO_ESTATUS_VIVIENDA (historico_estatus_vivienda_id, fecha_estatus, estatus_vivienda_id, vivienda_id) values (historico_estatus_vivienda_seq.nextval, to_date('15-09-2023','dd-mm-yyyy'), 1, 45);
 insert into HISTORICO_ESTATUS_VIVIENDA (historico_estatus_vivienda_id, fecha_estatus, estatus_vivienda_id, vivienda_id) values (historico_estatus_vivienda_seq.nextval, to_date('09-11-2023','dd-mm-yyyy'), 6, 45);
 insert into HISTORICO_ESTATUS_VIVIENDA (historico_estatus_vivienda_id, fecha_estatus, estatus_vivienda_id, vivienda_id) values (historico_estatus_vivienda_seq.nextval, to_date('15-09-2023','dd-mm-yyyy'), 1, 46);
