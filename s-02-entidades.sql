@@ -141,14 +141,14 @@ create table mensaje(
         references mensaje(mensaje_id)
 )
 
---Tabla: Vivienda_vacasiones
+--Tabla: Vivienda_vacaciones
 
 create table vivienda_vacaciones(
     vivienda_vacaciones_id,
     disponible boolean default true not null, 
     max_dias number(3,0) not null,
-    costo_apartado (10,4) not null,
-    costo_dia (10,4) not null,
+    costo_apartado (8,2) not null,
+    costo_dia (8,2) not null,
     constraint vivienda_vacaciones_vienda_vacaciones_id_fk foreign key(vivienda_vacaciones_id) 
         references vivienda(vivienda_id),
     constraint vivienda_vacaciones_pk primary key(vivienda_vacaciones_id)
@@ -159,7 +159,7 @@ create table vivienda_vacaciones(
 create table vivienda_renta(
     vivienda_renta_id,
     dia_pago number(2,0) not null,
-    renta_mensual (10,4) not null,
+    renta_mensual (8,2) not null,
     constraint vivienda_renta_vivienda_renta_id_fk foreign key(vivienda_renta_id) 
         references vivienda(vivienda_id),
     constraint vivienda_renta_pk primary key(vivienda_renta_id)
@@ -169,7 +169,7 @@ create table vivienda_renta(
 
 create table vivienda_venta(
     vivienta_venta_id,
-    num_castral varchar2(16) not null,
+    num_catastral varchar2(16) not null,
     folio_escritura varchar2(18) not null,
     avaluo_propiedad blob not null,
     precio_inicial (11,2) not null,
@@ -268,7 +268,7 @@ create table compra(
     vivienda_venta_id,
     clabe_interbancaria numeric(18,0) not null,
     precio_final (11,2) not null,
-    comision (10,4) not null,
+    comision (8,2) not null,
     usuario_id not null,
     constraint compra_vivienda_venta_id_fk foreign key(vivienda_venta_id)
         references vivienda_venta(vivienda_venta_id),
