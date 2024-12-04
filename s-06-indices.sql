@@ -43,8 +43,7 @@ create index historico_estatus_vivienda_vivienda_id_ix on historico_estatus_vivi
 
 -- Indices para la tabla favorito
 
-create index favorito_usuario_id_ix on favorito(usuario_id);
-create index favorito_vivienda_vacaciones_id_ix on favorito(vivienda_vacaciones_id);
+create unique index favorito_usuario_vivienda_iuk on favorito(usuario_id, vivienda_id);
 -- create unique index favorito_telefono_uk on favorito(telefono); indice implicito por la constraint favorito_telefono_uk
 
 -- Indices para la tabla Alquiler

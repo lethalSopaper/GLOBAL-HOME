@@ -126,8 +126,8 @@ create table mensaje(
     mensaje_id number(10,0),
     titulo varchar2(40) not null,
     cuerpo varchar2(500) not null,
-    leido boolean default on null false, 
-    fecha_envio date default on null sysdate,
+    leido boolean default false not null, 
+    fecha_envio date default sysdate not null,
     antiguedad_mensaje generated always as (trunc(sysdate) - trunc(fecha_envio)) virtual,
     usuario_id not null,
     vivienda_id not null,
@@ -145,7 +145,7 @@ create table mensaje(
 
 create table vivienda_vacaciones(
     vivienda_vacaciones_id,
-    disponible boolean default on null true, 
+    disponible boolean default true not null, 
     max_dias number(3,0) not null,
     costo_apartado (10,4) not null,
     costo_dia (10,4) not null,
@@ -185,7 +185,7 @@ create table vivienda_venta(
 create table favorito(
     favorito_id number(10,0),   
     telefono number(10,0) not null,
-    notificacion_enviada boolean default on null false, 
+    notificacion_enviada boolean default false not null, 
     usuario_id not null,
     vivienda_vacaciones_id not null,
     constraint favorito_pk primary key(favorito_id),
@@ -218,7 +218,7 @@ create table alquiler(
 
 create table encuesta(
     encuesta_id number(10,0),
-    fecha_evaluacion date default on null sysdate,
+    fecha_evaluacion date default sysdate not null,
     calificacion number(1,0) not null,
     descripcion varchar2(128),
     alquiler_id not null,
@@ -281,7 +281,7 @@ create table compra(
 create table pago(
     num_pago number(10,0),
     vivienda_venta_id,
-    fecha_pago date default on null sysdate,
+    fecha_pago date default sysdate not null,
     importe number(8,2) not null,  
     recibo blob not null,   
     constraint pago_vivienda_venta_id_fk foreign key(vivienda_venta_id)

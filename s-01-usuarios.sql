@@ -17,6 +17,7 @@ grant create view to rol_admin;
 grant create sequence to rol_admin;
 grant create procedure to rol_admin;
 grant create synonym to rol_admin;
+grant create public synonym to rol_admin;
 
 prompt creado el rol_invitado si es que existe
 drop role if exists rol_invitado;
