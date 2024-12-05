@@ -37,7 +37,7 @@ create table tarjeta(
     constraint tarjeta_usuario_id_fk foreign key(usuario_id) 
         references usuario(usuario_id),
     constraint tarjeta_mes_expiracion_chk check( mes_expiracion between 1 and 12),
-    constraint tarjeta_num_tarjeta_chk check(num_tarjeta = 16)
+    constraint tarjeta_num_tarjeta_chk check(length(to_char(num_tarjeta)) = 16)
 );
 --Tabla: Estatus_Vivienda
 prompt Creando tabla estatus_vivienda
@@ -217,7 +217,7 @@ create table alquiler(
     fecha_inicio date not null,
     fecha_fin date not null,
     duracion_alquiler generated always as (trunc(fecha_fin) - trunc(fecha_inicio)) virtual, 
-    costo_total number(11,2) not null,
+    costo_total number(11,2),
     vivienda_vacaciones_id not null,
     usuario_id not null,
     constraint alquiler_pk primary key(alquiler_id),
@@ -286,7 +286,7 @@ create table compra(
     vivienda_venta_id,
     clabe_interbancaria numeric(18,0) not null,
     precio_final number(11,2) not null,
-    comision number(8,2) not null,
+    comision number(11,2) not null,
     usuario_id not null,
     constraint compra_vivienda_venta_id_fk foreign key(vivienda_venta_id)
         references vivienda_venta(vivienda_venta_id),
@@ -302,7 +302,7 @@ create table pago(
     num_pago number(10,0),
     vivienda_venta_id,
     fecha_pago date default sysdate not null,
-    importe number(8,2) not null,  
+    importe number(11,2) not null,  
     recibo blob not null,   
     constraint pago_vivienda_venta_id_fk foreign key(vivienda_venta_id)
         references vivienda_venta(vivienda_venta_id),

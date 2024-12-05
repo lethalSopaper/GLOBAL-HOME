@@ -31,13 +31,13 @@ grant create synonym to rol_invitado;
 prompt eliminando al usuario tu_proy_admin si es que existe
 drop user if exists tu_proy_admin cascade;
 prompt creando al usuario tu_proy_admin 
-create user tu_proy_admin identified by 1234 quota unlimited on users;
+create user tu_proy_admin identified by 1234 default tablespace users quota unlimited on users;
 prompt asignando roles a tu_proy_admin
 grant rol_admin to tu_proy_admin;
 
 prompt eliminando al usuario tu_proy_invitado si es que existe
 drop user if exists tu_proy_invitado cascade;
 prompt creando al usuario tu_proy_invitado
-create user tu_proy_invitado identified by 1234;
+create user tu_proy_invitado identified by 1234 default tablespace users;
 prompt asignando roles a tu_proy_invitado
 grant rol_invitado to tu_proy_invitado;
