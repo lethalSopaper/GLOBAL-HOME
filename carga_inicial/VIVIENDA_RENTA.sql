@@ -1,4 +1,5 @@
 -- [v][i][v][i][e][n][d][a][_][s][e][q][.][n][e][x][t][v][a][l][,][ ]([t][r][u][e]|[f][a][l][s][e])[,][ ][t][r][u][e]
+-- Disponibles
 insert into VIVIENDA_RENTA (vivienda_renta_id, dia_pago, renta_mensual) values (1, 28, 17477);
 insert into VIVIENDA_RENTA (vivienda_renta_id, dia_pago, renta_mensual) values (2, 28, 41349);
 insert into VIVIENDA_RENTA (vivienda_renta_id, dia_pago, renta_mensual) values (3, 26, 19967);
@@ -9,6 +10,7 @@ insert into VIVIENDA_RENTA (vivienda_renta_id, dia_pago, renta_mensual) values (
 insert into VIVIENDA_RENTA (vivienda_renta_id, dia_pago, renta_mensual) values (13, 28, 29828);
 insert into VIVIENDA_RENTA (vivienda_renta_id, dia_pago, renta_mensual) values (14, 10, 41252);
 insert into VIVIENDA_RENTA (vivienda_renta_id, dia_pago, renta_mensual) values (15, 10, 40323);
+-- En renta
 insert into VIVIENDA_RENTA (vivienda_renta_id, dia_pago, renta_mensual) values (21, 15, 43552);
 insert into VIVIENDA_RENTA (vivienda_renta_id, dia_pago, renta_mensual) values (22, 16, 7405);
 insert into VIVIENDA_RENTA (vivienda_renta_id, dia_pago, renta_mensual) values (23, 1, 3757);
@@ -17,9 +19,11 @@ insert into VIVIENDA_RENTA (vivienda_renta_id, dia_pago, renta_mensual) values (
 insert into VIVIENDA_RENTA (vivienda_renta_id, dia_pago, renta_mensual) values (26, 6, 12552);
 insert into VIVIENDA_RENTA (vivienda_renta_id, dia_pago, renta_mensual) values (27, 12, 24486);
 insert into VIVIENDA_RENTA (vivienda_renta_id, dia_pago, renta_mensual) values (28, 12, 47089);
+-- Alquiladas
 insert into VIVIENDA_RENTA (vivienda_renta_id, dia_pago, renta_mensual) values (34, 11, 48368);
 insert into VIVIENDA_RENTA (vivienda_renta_id, dia_pago, renta_mensual) values (35, 1, 7040);
 insert into VIVIENDA_RENTA (vivienda_renta_id, dia_pago, renta_mensual) values (36, 9, 46027);
+-- Inactivas
 insert into VIVIENDA_RENTA (vivienda_renta_id, dia_pago, renta_mensual) values (47, 3, 14685);
 insert into VIVIENDA_RENTA (vivienda_renta_id, dia_pago, renta_mensual) values (48, 22, 16617);
 insert into VIVIENDA_RENTA (vivienda_renta_id, dia_pago, renta_mensual) values (49, 27, 15319);

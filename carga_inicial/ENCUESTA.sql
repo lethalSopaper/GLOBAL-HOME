@@ -1,0 +1,15 @@
+insert into ENCUESTA (encuesta_id, fecha_evaluacion, calificacion, descripcion, alquiler_id, usuario_id) values (encuesta_seq.netxval, to_date('24-09-2023','dd-mm-yyyy'), 2, 'descripcion-1', 6, 106);
+insert into ENCUESTA (encuesta_id, fecha_evaluacion, calificacion, descripcion, alquiler_id, usuario_id) values (encuesta_seq.netxval, to_date('08-09-2023','dd-mm-yyyy'), 4, 'descripcion-2', 7, 107);
+insert into ENCUESTA (encuesta_id, fecha_evaluacion, calificacion, descripcion, alquiler_id, usuario_id) values (encuesta_seq.netxval, to_date('02-05-2024','dd-mm-yyyy'), 2, 'descripcion-3', 8, 108);
+insert into ENCUESTA (encuesta_id, fecha_evaluacion, calificacion, descripcion, alquiler_id, usuario_id) values (encuesta_seq.netxval, to_date('07-10-2023','dd-mm-yyyy'), 4, 'descripcion-4', 9, 41);
+insert into ENCUESTA (encuesta_id, fecha_evaluacion, calificacion, descripcion, alquiler_id, usuario_id) values (encuesta_seq.netxval, to_date('20-11-2023','dd-mm-yyyy'), 5, 'descripcion-5', 10, 42);
+insert into ENCUESTA (encuesta_id, fecha_evaluacion, calificacion, descripcion, alquiler_id, usuario_id) values (encuesta_seq.netxval, to_date('15-03-2024','dd-mm-yyyy'), 3, 'descripcion-6', 11, 43);
+insert into ENCUESTA (encuesta_id, fecha_evaluacion, calificacion, descripcion, alquiler_id, usuario_id) values (encuesta_seq.netxval, to_date('22-04-2024','dd-mm-yyyy'), 3, 'descripcion-7', 12, 44);
+insert into ENCUESTA (encuesta_id, fecha_evaluacion, calificacion, descripcion, alquiler_id, usuario_id) values (encuesta_seq.netxval, to_date('06-02-2024','dd-mm-yyyy'), 4, 'descripcion-8', 13, 45);
+insert into ENCUESTA (encuesta_id, fecha_evaluacion, calificacion, descripcion, alquiler_id, usuario_id) values (encuesta_seq.netxval, to_date('27-02-2024','dd-mm-yyyy'), 3, 'descripcion-9', 14, 46);
+insert into ENCUESTA (encuesta_id, fecha_evaluacion, calificacion, descripcion, alquiler_id, usuario_id) values (encuesta_seq.netxval, to_date('09-11-2023','dd-mm-yyyy'), 2, 'descripcion-10', 15, 47);
+insert into ENCUESTA (encuesta_id, fecha_evaluacion, calificacion, descripcion, alquiler_id, usuario_id) values (encuesta_seq.netxval, to_date('28-11-2023','dd-mm-yyyy'), 5, 'descripcion-11', 16, 48);
+insert into ENCUESTA (encuesta_id, fecha_evaluacion, calificacion, descripcion, alquiler_id, usuario_id) values (encuesta_seq.netxval, to_date('22-11-2023','dd-mm-yyyy'), 4, 'descripcion-12', 17, 49);
+insert into ENCUESTA (encuesta_id, fecha_evaluacion, calificacion, descripcion, alquiler_id, usuario_id) values (encuesta_seq.netxval, to_date('30-12-2023','dd-mm-yyyy'), 3, 'descripcion-13', 18, 50);
+insert into ENCUESTA (encuesta_id, fecha_evaluacion, calificacion, descripcion, alquiler_id, usuario_id) values (encuesta_seq.netxval, to_date('06-08-2023','dd-mm-yyyy'), 2, 'descripcion-14', 19, 51);
+insert into ENCUESTA (encuesta_id, fecha_evaluacion, calificacion, descripcion, alquiler_id, usuario_id) values (encuesta_seq.netxval, to_date('02-04-2024','dd-mm-yyyy'), 2, 'descripcion-15', 20, 52);
