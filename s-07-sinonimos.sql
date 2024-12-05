@@ -1,4 +1,4 @@
--- Autor: Tepal Briseño Hansel Yael y Ugartechea Gonzales Luis Antonio
+-- Autor: Tepal Briseño Hansel Yael y Ugartechea González Luis Antonio
 -- Fecha: 31/11/2024
 -- Descripción: Creación de sinonimos para las tablas de la base de datos
 
@@ -17,7 +17,7 @@ grant select on tu_proy_admin.vivienda_renta to tu_proy_invitado;
 grant select on tu_proy_admin.clabe to tu_proy_invitado;
 grant select on tu_proy_admin.vivienda_vacaciones to tu_proy_invitado;
 grant select on tu_proy_admin.vivienda_venta to tu_proy_invitado;
-grant select on tu_proy_admin.vivienda to tu_proy_inivtado;
+grant select on tu_proy_admin.vivienda to tu_proy_invitado;
 grant select on tu_proy_admin.servicio to tu_proy_invitado;
 grant select on tu_proy_admin.servicio_vivienda to tu_proy_invitado;
 grant select on tu_proy_admin.estatus_vivienda to tu_proy_invitado;
@@ -32,7 +32,7 @@ create or replace synonym vivienda_renta for tu_proy_admin.vivienda_renta;
 create or replace synonym vivienda_vacaciones for tu_proy_admin.vivienda_vacaciones;
 create or replace synonym vivienda_venta for tu_proy_admin.vivienda_venta;
 
-propmpt conectando con el usuario tu_proy_admin para crear sinonimos privados
+prompt conectando con el usuario tu_proy_admin para crear sinonimos privados
 
 connect tu_proy_admin/1234@htblugbd_s2
 

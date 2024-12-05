@@ -6,13 +6,85 @@ tabla temporal
 -- para el usuario dueño crear un resumen de calificaciones a partir de las encuestas
 -- procedimiento para generar la table temporal (vemos)
 
--- tabla externa 
--- se tiene una lista de posibles viviendas que se podran incorporar al sitio web, 
--- el usuario admin podra consulatr dichas propiedades desde la pagina pero no se cargan a la base de datos
--- si no que se leeran desde un csv
-
 --hacer un procedimienot para calcular la comision
 
-
 --trigger para verificar las contraseñas
+
+-- mensajes de respuestas:
+
+1,hola, este es un mensaje, true, 04/12/24, 1, 5, 2
+
+2, hola, ya vi, true, 04/12/24, 2, 5, 3
+
+3, que bueno, xd, false, 04/12/24, 1, 5, null 
+
+crear procedimiento para responder un mensaje:
+
+recibe el mensaje papa.
+y de ese tiene que extraer la vivienda y tiene que cambiar el leido a true, 
+
+hola, cuerpo, vivienda de interes
+
+1, hola, cuerpo, validar si fue respondido, sysdate, obtener el id del ussuario de interes, la vivienda, obtener el mensaje de respuesta
+
+1 
+trigger vivienda
+
+para vivienda solo se pueden insertar viviendas disponibles.
+
+cuando se actualiza el estauts a vendida validar que el pago se completo
+y cambiar la fecha.
+para actualizar a inactiva el estatus anterior deberia de ser disponible.
+no se pueden eliminar viviendas
+
+2
+trigger usuario
+
+cuando se inserte la contraseña debe de contener al dos caracteres raros, minimo un numero, y una mayuscula.
+cuando se actuazlice la contraseña: debe tener las mismas caracteristicas y hacer un log en el csv.
+
+3
+trigger alquiler
+
+para insertar  el estatus tiene que estar en disponible
+y se tendra que cambiar el estatus a alquilada y la fecha de estatus 
+y hacer una insercion en el historico
+
+cuando se actualiza un alquiler se añade al csv log.
+
+no se pueden eliminar alquileres
+
+4
+triger de renta
+
+para insertar el estatus de la vivienda debe de estar disponible,
+y se tendra que actualizar  el estatus a en renta, actulaizar la fecha de estatus, 
+y insertar en el historico.
+
+cuando se actualiza una renta se añáde al csv log.
+
+no se puede eliminar una renta
+
+5 
+trgger de compra
+
+inserta una compra el estatus debe de estar disponible, y se tendra que actualizar
+el estatus a en venta, actualizar la fecha estatus, y insertar en el historico.
+la comision debe de ser del 10% al precio final
+
+solo se puede actualizar la calbe interbancaria, en caso de hacerlo se añade al csv log.
+
+no se puede eliminar una compra
+
+6
+trigger de pago
+
+-- no se que implementar en este, posible trigger incesecario, pero vemos
+
+
+
+okay descubriste un problema, al momento de hacer rollback puede que tu csv quede con errores de login,
+asi que puedes crear una tabla temporal que guarde todos los logs que se hallan realizado y al final en caso de que se 
+haga commit los datos de log pasen al csv.
+
 

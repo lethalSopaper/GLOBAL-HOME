@@ -25,6 +25,7 @@ prompt creando el rol_invitado
 create role rol_invitado;
 prompt otorgando permisos al rol_invitado
 grant create session to rol_invitado;
+grant create synonym to rol_invitado;
 
 
 prompt eliminando al usuario tu_proy_admin si es que existe

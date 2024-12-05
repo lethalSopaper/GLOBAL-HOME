@@ -1,4 +1,4 @@
--- Autor: Tepal Briseño Hansel Yael y Ugartechea Gonzáles Luis Antonio
+-- Autor: Tepal Briseño Hansel Yael y Ugartechea González Luis Antonio
 -- Fecha: 30/11/2024
 -- Descripción: Creación de secuencias para las tablas de la base de datos
 
@@ -146,3 +146,26 @@ create sequence renta_seq
     noorder
 ;
 
+-- Secuencia pra la tabla externa log_ext
+
+create sequence log_ext_seq
+    start with 1
+    increment by 1
+    nomaxvalue
+    nominvalue
+    nocycle
+    cache 20
+    noorder
+;
+
+-- Secuencia para la tabla operaciones_temp
+
+create sequence operaciones_temp_seq
+    start with 1
+    increment by 1
+    nomaxvalue
+    nominvalue
+    nocycle
+    cache 20
+    noorder
+;

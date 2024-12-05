@@ -1,10 +1,10 @@
--- Autor: Tepal Briseño Hansel Yael y Ugartechea Gonzáles Luis Antonio
+-- Autor: Tepal Briseño Hansel Yael y Ugartechea González Luis Antonio
 -- Fecha: 30/11/2024
 -- Descripción: Creación de índices para las tablas de la base de datos
 
 -- Indices para la tabla tarjeta
 
-create index tarjeta_usuadio_id_ix on tarjeta(usuario_id);
+create index tarjeta_usuario_id_ix on tarjeta(usuario_id);
 --create unique tarjeta_num_tarjeta_uk on tarjeta(num_tarjeta); indice implicito por la constraint tarjeta_num_tarjeta_uk
 
 -- Indices para la tabla Mensaje
@@ -43,7 +43,7 @@ create index historico_estatus_vivienda_vivienda_id_ix on historico_estatus_vivi
 
 -- Indices para la tabla favorito
 
-create unique index favorito_usuario_vivienda_iuk on favorito(usuario_id, vivienda_id);
+create unique index favorito_usuario_vivienda_iuk on favorito(usuario_id, vivienda_vacaciones_id);
 -- create unique index favorito_telefono_uk on favorito(telefono); indice implicito por la constraint favorito_telefono_uk
 
 -- Indices para la tabla Alquiler
