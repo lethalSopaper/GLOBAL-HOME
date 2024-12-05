@@ -1,3 +1,4 @@
+-- Disponibles
 insert into VIVIENDA_VACACIONES (vivienda_vacaciones_id, disponible, max_dias, costo_apartado, costo_dia) values (1, true, 6, 188, 4663);
 insert into VIVIENDA_VACACIONES (vivienda_vacaciones_id, disponible, max_dias, costo_apartado, costo_dia) values (2, true, 16, 101, 1563);
 insert into VIVIENDA_VACACIONES (vivienda_vacaciones_id, disponible, max_dias, costo_apartado, costo_dia) values (3, true, 3, 232, 3959);
@@ -8,9 +9,11 @@ insert into VIVIENDA_VACACIONES (vivienda_vacaciones_id, disponible, max_dias, c
 insert into VIVIENDA_VACACIONES (vivienda_vacaciones_id, disponible, max_dias, costo_apartado, costo_dia) values (8, true, 25, 104, 1968);
 insert into VIVIENDA_VACACIONES (vivienda_vacaciones_id, disponible, max_dias, costo_apartado, costo_dia) values (9, true, 25, 229, 4797);
 insert into VIVIENDA_VACACIONES (vivienda_vacaciones_id, disponible, max_dias, costo_apartado, costo_dia) values (10, true, 29, 255, 3865);
+-- En renta
 insert into VIVIENDA_VACACIONES (vivienda_vacaciones_id, disponible, max_dias, costo_apartado, costo_dia) values (26, false, 17, 219, 3652);
 insert into VIVIENDA_VACACIONES (vivienda_vacaciones_id, disponible, max_dias, costo_apartado, costo_dia) values (27, false, 23, 111, 1453);
 insert into VIVIENDA_VACACIONES (vivienda_vacaciones_id, disponible, max_dias, costo_apartado, costo_dia) values (28, false, 4, 139, 2309);
+-- Alquiladas
 insert into VIVIENDA_VACACIONES (vivienda_vacaciones_id, disponible, max_dias, costo_apartado, costo_dia) values (29, false, 19, 101, 2501);
 insert into VIVIENDA_VACACIONES (vivienda_vacaciones_id, disponible, max_dias, costo_apartado, costo_dia) values (30, false, 26, 115, 4192);
 insert into VIVIENDA_VACACIONES (vivienda_vacaciones_id, disponible, max_dias, costo_apartado, costo_dia) values (31, false, 13, 156, 3755);
@@ -19,6 +22,7 @@ insert into VIVIENDA_VACACIONES (vivienda_vacaciones_id, disponible, max_dias, c
 insert into VIVIENDA_VACACIONES (vivienda_vacaciones_id, disponible, max_dias, costo_apartado, costo_dia) values (34, false, 15, 263, 4085);
 insert into VIVIENDA_VACACIONES (vivienda_vacaciones_id, disponible, max_dias, costo_apartado, costo_dia) values (35, false, 29, 188, 4172);
 insert into VIVIENDA_VACACIONES (vivienda_vacaciones_id, disponible, max_dias, costo_apartado, costo_dia) values (36, false, 22, 267, 4531);
+-- Inactivas
 insert into VIVIENDA_VACACIONES (vivienda_vacaciones_id, disponible, max_dias, costo_apartado, costo_dia) values (47, false, 25, 129, 4083);
 insert into VIVIENDA_VACACIONES (vivienda_vacaciones_id, disponible, max_dias, costo_apartado, costo_dia) values (48, false, 25, 213, 2486);
 insert into VIVIENDA_VACACIONES (vivienda_vacaciones_id, disponible, max_dias, costo_apartado, costo_dia) values (49, false, 26, 159, 4275);
