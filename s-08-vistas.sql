@@ -59,21 +59,21 @@ and h.estatus_vivienda_id = e.estatus_vivienda_id;
 -- Vista para mostrar los mensajes entre el usuario dueño y el usuario interesado en una vivienda
 
 prompt creando vista v_mensaje
+
 create or replace view v_mensaje(
     mensaje_id, titulo, fecha_envio, cuerpo,
-    leido, nombre_usuario_interesado, email_interesado,
-    nombre_usuario_duenio, email_duenio,
+    leido, usuario_id_interesado, nombre_usuario_interesado,
+    usuario_id_duenio, nombre_usuario_duenio,
     vivienda_id, direccion, descripcion
 ) as
 select m.mensaje_id, m.titulo, m.fecha_envio, m.cuerpo,
-    m.leido, u.nombre_usuario, u.email, ud.nombre_usuario, ud.email,
+    m.leido, m.usuario_id, u.nombre_usuario,
+    v.usuario_duenio_id, ud.nombre_usuario,
     v.vivienda_id, v.direccion, v.descripcion
-from usuario u, mensaje m, vivienda v, usuario ud
-where u.usuario_id = m.usuario_id
+from mensaje m, usuario u, vivienda v, usuario ud
+where m.usuario_id = u.usuario_id
 and m.vivienda_id = v.vivienda_id
 and v.usuario_duenio_id = ud.usuario_id;
-
--- Vista para mostrar los favoritos de un usuario
 
 prompt creando vista v_favorito
 create or replace view v_favorito(

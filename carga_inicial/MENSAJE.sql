@@ -5,10 +5,19 @@ insert into MENSAJE (mensaje_id, titulo, cuerpo, leido, fecha_envio, usuario_id,
 insert into MENSAJE (mensaje_id, titulo, cuerpo, leido, fecha_envio, usuario_id, vivienda_id) values (mensaje_seq.nextval, 'titulo-1-vivienda_id-4', 'cuerpo_mensaje-1-vivienda_id-4', true, to_date('08-02-2023','dd-mm-yyyy'), 44, 4);
 insert into MENSAJE (mensaje_id, titulo, cuerpo, leido, fecha_envio, usuario_id, vivienda_id) values (mensaje_seq.nextval, 'titulo-1-vivienda_id-5', 'cuerpo_mensaje-1-vivienda_id-5', true, to_date('24-02-2023','dd-mm-yyyy'), 45, 5);
 insert into MENSAJE (mensaje_id, titulo, cuerpo, leido, fecha_envio, usuario_id, vivienda_id) values (mensaje_seq.nextval, 'titulo-1-vivienda_id-6', 'cuerpo_mensaje-1-vivienda_id-6', false, to_date('14-02-2023','dd-mm-yyyy'), 46, 1);
+insert into MENSAJE (mensaje_id, titulo, cuerpo, leido, fecha_envio, usuario_id, vivienda_id) values (mensaje_seq.nextval, 'titulo-1-vivienda_id-61', 'cuerpo_mensaje-1-vivienda_id-61', false, to_date('15-02-2023','dd-mm-yyyy'), 46, 2);
 insert into MENSAJE (mensaje_id, titulo, cuerpo, leido, fecha_envio, usuario_id, vivienda_id) values (mensaje_seq.nextval, 'titulo-1-vivienda_id-7', 'cuerpo_mensaje-1-vivienda_id-7', false, to_date('12-02-2023','dd-mm-yyyy'), 47, 2);
+insert into MENSAJE (mensaje_id, titulo, cuerpo, leido, fecha_envio, usuario_id, vivienda_id) values (mensaje_seq.nextval, 'titulo-1-vivienda_id-71', 'cuerpo_mensaje-1-vivienda_id-71', false, to_date('13-02-2023','dd-mm-yyyy'), 47, 3);
 insert into MENSAJE (mensaje_id, titulo, cuerpo, leido, fecha_envio, usuario_id, vivienda_id) values (mensaje_seq.nextval, 'titulo-1-vivienda_id-8', 'cuerpo_mensaje-1-vivienda_id-8', false, to_date('13-02-2023','dd-mm-yyyy'), 48, 3);
+insert into MENSAJE (mensaje_id, titulo, cuerpo, leido, fecha_envio, usuario_id, vivienda_id) values (mensaje_seq.nextval, 'titulo-1-vivienda_id-81', 'cuerpo_mensaje-1-vivienda_id-81', false, to_date('14-02-2023','dd-mm-yyyy'), 48, 4);
+insert into MENSAJE (mensaje_id, titulo, cuerpo, leido, fecha_envio, usuario_id, vivienda_id) values (mensaje_seq.nextval, 'titulo-1-vivienda_id-82', 'cuerpo_mensaje-1-vivienda_id-82', false, to_date('15-02-2023','dd-mm-yyyy'), 48, 14);
 insert into MENSAJE (mensaje_id, titulo, cuerpo, leido, fecha_envio, usuario_id, vivienda_id) values (mensaje_seq.nextval, 'titulo-1-vivienda_id-9', 'cuerpo_mensaje-1-vivienda_id-9', false, to_date('14-02-2023','dd-mm-yyyy'), 49, 4);
+insert into MENSAJE (mensaje_id, titulo, cuerpo, leido, fecha_envio, usuario_id, vivienda_id) values (mensaje_seq.nextval, 'titulo-1-vivienda_id-91', 'cuerpo_mensaje-1-vivienda_id-91', false, to_date('15-02-2023','dd-mm-yyyy'), 49, 18);
+insert into MENSAJE (mensaje_id, titulo, cuerpo, leido, fecha_envio, usuario_id, vivienda_id) values (mensaje_seq.nextval, 'titulo-1-vivienda_id-91', 'cuerpo_mensaje-1-vivienda_id-91', false, to_date('16-02-2023','dd-mm-yyyy'), 49, 22);
 insert into MENSAJE (mensaje_id, titulo, cuerpo, leido, fecha_envio, usuario_id, vivienda_id) values (mensaje_seq.nextval, 'titulo-1-vivienda_id-10', 'cuerpo_mensaje-1-vivienda_id-10', false, to_date('02-02-2023','dd-mm-yyyy'), 50, 5);
+insert into MENSAJE (mensaje_id, titulo, cuerpo, leido, fecha_envio, usuario_id, vivienda_id) values (mensaje_seq.nextval, 'titulo-1-vivienda_id-10', 'cuerpo_mensaje-1-vivienda_id-10', false, to_date('02-02-2023','dd-mm-yyyy'), 50, 7);
+insert into MENSAJE (mensaje_id, titulo, cuerpo, leido, fecha_envio, usuario_id, vivienda_id) values (mensaje_seq.nextval, 'titulo-1-vivienda_id-101', 'cuerpo_mensaje-1-vivienda_id-101', false, to_date('03-02-2023','dd-mm-yyyy'), 50, 10);
+insert into MENSAJE (mensaje_id, titulo, cuerpo, leido, fecha_envio, usuario_id, vivienda_id) values (mensaje_seq.nextval, 'titulo-1-vivienda_id-102', 'cuerpo_mensaje-1-vivienda_id-102', false, to_date('04-02-2023','dd-mm-yyyy'), 50, 24);
 
 -- 5 mensajes con respuesta
 -- Respuestas:
