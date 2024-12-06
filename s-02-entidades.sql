@@ -61,7 +61,7 @@ create table vivienda (
     latitud varchar2(25) not null, 
     longitud varchar2(25) not null,
     direccion varchar2(128) not null,
-    descripcion varchar2(2000),
+    descripcion varchar2(2000) not null,
     estatus_vivienda_id not null,
     usuario_duenio_id not null,
     constraint vivienda_pk primary key(vivienda_id),

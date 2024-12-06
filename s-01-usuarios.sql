@@ -16,6 +16,7 @@ grant create table to rol_admin;
 grant create view to rol_admin;
 grant create sequence to rol_admin;
 grant create procedure to rol_admin;
+grant create trigger to rol_admin;
 grant create synonym to rol_admin;
 grant create public synonym to rol_admin;
 
