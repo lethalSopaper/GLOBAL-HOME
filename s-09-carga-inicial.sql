@@ -77,3 +77,5 @@ start carga_inicial/COMPRA.sql
 prompt llamando al script PAGO.sql
 
 start carga_inicial/PAGO.sql
+
+commit;
