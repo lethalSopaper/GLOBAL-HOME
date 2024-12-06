@@ -213,7 +213,7 @@ prompt Creando tabla alquiler
 
 create table alquiler(
     alquiler_id number(10,0),
-    folio varchar2(8) not null,
+    folio varchar2(8),
     fecha_inicio date not null,
     fecha_fin date not null,
     duracion_alquiler generated always as (trunc(fecha_fin) - trunc(fecha_inicio)) virtual, 

@@ -27,32 +27,12 @@ hola, cuerpo, vivienda de interes
 
 1, hola, cuerpo, validar si fue respondido, sysdate, obtener el id del ussuario de interes, la vivienda, obtener el mensaje de respuesta
 
-1 
-trigger vivienda
-
-para vivienda solo se pueden insertar viviendas disponibles.
-
-cuando se actualiza el estauts a vendida validar que el pago se completo
-y cambiar la fecha.
-para actualizar a inactiva el estatus anterior deberia de ser disponible.
-no se pueden eliminar viviendas
 
 2
 trigger usuario
 
 cuando se inserte la contraseña debe de contener al dos caracteres raros, minimo un numero, y una mayuscula.
 cuando se actuazlice la contraseña: debe tener las mismas caracteristicas y hacer un log en el csv.
-
-3
-trigger alquiler
-
-para insertar  el estatus tiene que estar en disponible
-y se tendra que cambiar el estatus a alquilada y la fecha de estatus 
-y hacer una insercion en el historico
-
-cuando se actualiza un alquiler se añade al csv log.
-
-no se pueden eliminar alquileres
 
 4
 triger de renta
@@ -83,8 +63,22 @@ trigger de pago
 
 
 
-okay descubriste un problema, al momento de hacer rollback puede que tu csv quede con errores de login,
-asi que puedes crear una tabla temporal que guarde todos los logs que se hallan realizado y al final en caso de que se 
-haga commit los datos de log pasen al csv.
+SELECT username, default_tablespace
+FROM dba_users
+WHERE username = 'TU_PROY_ADMIN';
+
+ALTER USER TU_PROY_ADMIN DEFAULT TABLESPACE USERS;
 
 
+FUNCIONES
+
+1. Función para leer archivos binarios y regresar un objeto BLOB/CLOB
+Cuando se almacena un documento PDF (como en el caso de las escrituras de propiedad o contratos de renta), 
+puedes necesitar una función para leer el archivo binario desde el disco y devolverlo como un objeto BLOB que pueda 
+ser insertado en una tabla.
+
+2. Función para generar un folio de alquiler de vivienda
+El folio de alquiler es un identificador único que debe crearse automáticamente cuando se realiza un alquiler de una vivienda 
+para vacaciones. Esta función generará el folio basado en el año, mes y un número secuencial único.
+
+3. Funcion que 

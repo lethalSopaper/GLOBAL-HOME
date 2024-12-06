@@ -146,22 +146,10 @@ create sequence renta_seq
     noorder
 ;
 
--- Secuencia pra la tabla externa log_ext
-
-create sequence log_ext_seq
-    start with 1
-    increment by 1
-    nomaxvalue
-    nominvalue
-    nocycle
-    cache 20
-    noorder
-;
-
 -- Secuencia para la tabla operaciones_temp
 
 create sequence operaciones_temp_seq
-    start with 1
+    start with 34
     increment by 1
     nomaxvalue
     nominvalue

@@ -1,3 +1,6 @@
+-- Autor: Tepal Briseño Hansel Yael y Ugartechea González Luis Antonio
+-- Fecha: 05/12/2024
+-- Descripción: Creación de triggers para la tabla alquiler
 /*
 3
 trigger alquiler
@@ -21,12 +24,12 @@ declare
     v_fecha_evento timestamp;
     v_fecha_inicio_alquiler date;
     v_fecha_fin_alquiler date;
-    v_costo_total number(10,2);
-    v_dias_alquiler number(10);
+    --v_costo_total number(10,2);
+    --v_dias_alquiler number(10);
     v_vivienda_alquilada_id number(10);
-    v_costo_dia vivienda_vacaciones.costo_dia%type;
-    v_costo_apartado vivienda_vacaciones.costo_apartado%type;
-    v_max_dias vivienda_vacaciones.max_dias%type;
+    --v_costo_dia vivienda_vacaciones.costo_dia%type;
+    --v_costo_apartado vivienda_vacaciones.costo_apartado%type;
+    --v_max_dias vivienda_vacaciones.max_dias%type;
 begin
     case
         when inserting then
@@ -58,28 +61,25 @@ begin
                 3,
                 v_vivienda_alquilada_id
             );
-
+            --Validar que el costo_total no sea insertado manualmente
+            if :new.costo_total is not null then
+                raise_application_error(-20001, 'No se puede insertar el costo total manualmente');
+            end if;
             -- Calcular costo total
             v_fecha_inicio_alquiler := :new.fecha_inicio;
             v_fecha_fin_alquiler := :new.fecha_fin;
-            v_dias_alquiler := v_fecha_fin_alquiler - v_fecha_inicio_alquiler;
 
-            select costo_dia, costo_apartado, max_dias into v_costo_dia, v_costo_apartado, v_max_dias
-            from vivienda_vacaciones
-            where vivienda_vacaciones_id = v_vivienda_alquilada_id;
-            
-            -- Validar que el numero de dias de alquiler no exceda el maximo permitido
-            if v_dias_alquiler > v_max_dias then
-                raise_application_error(-20001, 'El numero de dias de alquiler excede el maximo permitido');
+            :new.costo_total := calcular_total_alquiler(v_vivienda_alquilada_id, v_fecha_inicio_alquiler, v_fecha_fin_alquiler);
+            -- Validar que el folio no sea insertado manualmente
+            if :new.folio is not null then
+                raise_application_error(-20001, 'No se puede insertar el folio manualmente');
             end if;
-
-            v_costo_total := v_costo_dia * v_dias_alquiler + v_costo_apartado;
-            :new.costo_total := v_costo_total;
-            
+            -- Calcular folio
+            :new.folio := calcular_folio_alquiler(v_fecha_inicio_alquiler);
             -- Insertar en operaciones_temp
             insert into operaciones_temp(
                 operaciones_temp_id,
-                usuario_id,
+                usuario,
                 accion,
                 tabla_afectada,
                 detalle_accion,
@@ -87,7 +87,7 @@ begin
                 valor_nuevo
             ) values(
                 operaciones_temp_seq.nextval,
-                user,
+                SYS_CONTEXT('USERENV', 'SESSION_USER'),
                 'INSERT',
                 'ALQUILER',
                 'Se inserto un alquiler',
@@ -107,25 +107,9 @@ begin
             if :old.costo_total != :new.costo_total then
                 raise_application_error(-20004, 'No se puede modificar el costo total directamente');
             end if;
-            -- Validar si el folio se modifica y si se hace añadir a la tabla temporal
+            -- Validar si se modifica el folio
             if :old.folio != :new.folio then
-                insert into operaciones_temp(
-                    operaciones_temp_id,
-                    usuario_id,
-                    accion,
-                    tabla_afectada,
-                    detalle_accion,
-                    valor_anterior,
-                    valor_nuevo
-                ) values(
-                    operaciones_temp_seq.nextval,
-                    user,
-                    'UPDATE',
-                    'ALQUILER',
-                    'Se actualizo el folio',
-                    :old.folio,
-                    :new.folio
-                );
+                raise_application_error(-20005, 'No se puede modificar el folio');
             end if;
             -- Obtener id de la vivienda alquilada
             v_vivienda_alquilada_id := :new.vivienda_vacaciones_id;
@@ -134,23 +118,13 @@ begin
                 -- Calcular nuevo costo total
                 v_fecha_inicio_alquiler := :new.fecha_inicio;
                 v_fecha_fin_alquiler := :new.fecha_fin;
-                v_dias_alquiler := v_fecha_fin_alquiler - v_fecha_inicio_alquiler;
 
-                select costo_dia, costo_apartado, max_dias into v_costo_dia, v_costo_apartado, v_max_dias
-                from vivienda_vacaciones
-                where vivienda_vacaciones_id = v_vivienda_alquilada_id;
-
-                -- Validar que el numero de dias de alquiler no exceda el maximo permitido
-                if v_dias_alquiler > v_max_dias then
-                    raise_application_error(-20001, 'El numero de dias de alquiler excede el maximo permitido');
-                end if;
-
-                v_costo_total := v_costo_dia * v_dias_alquiler + v_costo_apartado;
-                :new.costo_total := v_costo_total;
+                :new.costo_total := calcular_total_alquiler(v_vivienda_alquilada_id, v_fecha_inicio_alquiler, 
+                    v_fecha_fin_alquiler);
 
                 insert into operaciones_temp(
                     operaciones_temp_id,
-                    usuario_id,
+                    usuario,
                     accion,
                     tabla_afectada,
                     detalle_accion,
@@ -158,7 +132,7 @@ begin
                     valor_nuevo
                 ) values(
                     operaciones_temp_seq.nextval,
-                    user,
+                    SYS_CONTEXT('USERENV', 'SESSION_USER'),
                     'UPDATE',
                     'ALQUILER',
                     'Se actualizaron fechas de alquiler y costo_total',
@@ -167,7 +141,7 @@ begin
                 );
             end if;
         when deleting then
-            raise_application_error(-20002, 'No se pueden eliminar alquileres');
+            raise_application_error(-20006, 'No se pueden eliminar alquileres');
 
     end case;
 
