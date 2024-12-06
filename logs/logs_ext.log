@@ -1,0 +1,1266 @@
+
+
+ LOG file opened at 12/05/24 23:13:31
+
+Total Number of Files=1
+
+Data File: logs_ext.csv
+
+Log File: logs_ext.log
+
+
+
+ LOG file opened at 12/05/24 23:13:31
+
+Bad File: logs_ext_bad.log
+
+Field Definitions for table LOGS_EXT
+  Record format DELIMITED BY NEWLINE
+  Data in file has same endianness as the platform
+  Rows with all null fields are accepted
+
+  Fields in Data Source: 
+
+    EVENTO_ID                       CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    USUARIO_ID                      CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    ACCION                          CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    TABLA_AFECTADA                  CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    DETALLE_ACCION                  CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    FECHA_EVENTO                    CHAR (255)
+      Date datatype TIMESTAMP, date mask dd/mm/yyyy hh24:mi:ss.ff3
+      Terminated by ","
+      Trim whitespace from left and right
+    VALOR_ANTERIOR                  CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    VALOR_NUEVO                     CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+error processing column EVENTO_ID in row 1 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 'e' to a number: EVENTO_ID
+
+Date Cache Statistics for table LOGS_EXT
+  Max Size:      1000
+  Entries :         5
+  Hits    :         0
+  Misses  :         0
+
+
+
+ LOG file opened at 12/05/24 23:14:40
+
+Total Number of Files=1
+
+Data File: logs_ext.csv
+
+Log File: logs_ext.log
+
+
+
+ LOG file opened at 12/05/24 23:14:40
+
+Bad File: logs_ext_bad.log
+
+Field Definitions for table LOGS_EXT
+  Record format DELIMITED BY NEWLINE
+  Data in file has same endianness as the platform
+  Rows with all null fields are accepted
+
+  Fields in Data Source: 
+
+    EVENTO_ID                       CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    USUARIO_ID                      CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    ACCION                          CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    TABLA_AFECTADA                  CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    DETALLE_ACCION                  CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    FECHA_EVENTO                    CHAR (255)
+      Date datatype TIMESTAMP, date mask dd/mm/yyyy hh24:mi:ss.ff3
+      Terminated by ","
+      Trim whitespace from left and right
+    VALOR_ANTERIOR                  CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    VALOR_NUEVO                     CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+error processing column EVENTO_ID in row 1 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 'e' to a number: EVENTO_ID
+
+Date Cache Statistics for table LOGS_EXT
+  Max Size:      1000
+  Entries :         5
+  Hits    :         0
+  Misses  :         0
+
+
+
+ LOG file opened at 12/05/24 23:31:07
+
+Total Number of Files=1
+
+Data File: logs_ext.csv
+
+Log File: logs_ext.log
+
+
+
+ LOG file opened at 12/05/24 23:31:07
+
+Bad File: logs_ext_bad.log
+
+Field Definitions for table LOGS_EXT
+  Record format DELIMITED BY NEWLINE
+  Data in file has same endianness as the platform
+  Rows with all null fields are accepted
+
+  Fields in Data Source: 
+
+    EVENTO_ID                       CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    USUARIO_ID                      CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    ACCION                          CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    TABLA_AFECTADA                  CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    DETALLE_ACCION                  CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    FECHA_EVENTO                    CHAR (255)
+      Date datatype TIMESTAMP, date mask dd/mm/yyyy hh24:mi:ss.ff3
+      Terminated by ","
+      Trim whitespace from left and right
+    VALOR_ANTERIOR                  CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    VALOR_NUEVO                     CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+error processing column EVENTO_ID in row 1 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 'e' to a number: EVENTO_ID
+
+Date Cache Statistics for table LOGS_EXT
+  Max Size:      1000
+  Entries :         5
+  Hits    :         0
+  Misses  :         0
+
+
+
+ LOG file opened at 12/05/24 23:31:32
+
+Total Number of Files=1
+
+Data File: logs_ext.csv
+
+Log File: logs_ext.log
+
+
+
+ LOG file opened at 12/05/24 23:31:32
+
+Bad File: logs_ext_bad.log
+
+Field Definitions for table LOGS_EXT
+  Record format DELIMITED BY NEWLINE
+  Data in file has same endianness as the platform
+  Rows with all null fields are accepted
+
+  Fields in Data Source: 
+
+    EVENTO_ID                       CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    USUARIO_ID                      CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    ACCION                          CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    TABLA_AFECTADA                  CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    DETALLE_ACCION                  CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    FECHA_EVENTO                    CHAR (255)
+      Date datatype TIMESTAMP, date mask dd/mm/yyyy hh24:mi:ss.ff3
+      Terminated by ","
+      Trim whitespace from left and right
+    VALOR_ANTERIOR                  CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    VALOR_NUEVO                     CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+error processing column EVENTO_ID in row 1 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 'e' to a number: EVENTO_ID
+
+Date Cache Statistics for table LOGS_EXT
+  Max Size:      1000
+  Entries :         5
+  Hits    :         0
+  Misses  :         0
+
+
+
+ LOG file opened at 12/05/24 23:32:07
+
+Total Number of Files=1
+
+Data File: logs_ext.csv
+
+Log File: logs_ext.log
+
+
+
+ LOG file opened at 12/05/24 23:32:07
+
+Bad File: logs_ext_bad.log
+
+Field Definitions for table LOGS_EXT
+  Record format DELIMITED BY NEWLINE
+  Data in file has same endianness as the platform
+  Rows with all null fields are accepted
+
+  Fields in Data Source: 
+
+    EVENTO_ID                       CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    USUARIO_ID                      CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    ACCION                          CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    TABLA_AFECTADA                  CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    DETALLE_ACCION                  CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    FECHA_EVENTO                    CHAR (255)
+      Date datatype TIMESTAMP, date mask dd/mm/yyyy hh24:mi:ss.ff3
+      Terminated by ","
+      Trim whitespace from left and right
+    VALOR_ANTERIOR                  CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    VALOR_NUEVO                     CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+error processing column EVENTO_ID in row 1 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 'e' to a number: EVENTO_ID
+
+Date Cache Statistics for table LOGS_EXT
+  Max Size:      1000
+  Entries :         5
+  Hits    :         0
+  Misses  :         0
+
+
+
+ LOG file opened at 12/06/24 10:12:23
+
+Total Number of Files=1
+
+Data File: logs_ext.csv
+
+Log File: logs_ext.log
+
+
+
+ LOG file opened at 12/06/24 10:12:23
+
+Bad File: logs_ext_bad.log
+
+Field Definitions for table LOGS_EXT
+  Record format DELIMITED BY NEWLINE
+  Data in file has same endianness as the platform
+  Rows with all null fields are accepted
+
+  Fields in Data Source: 
+
+    EVENTO_ID                       CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    USUARIO_ID                      CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    ACCION                          CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    TABLA_AFECTADA                  CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    DETALLE_ACCION                  CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    FECHA_EVENTO                    CHAR (255)
+      Date datatype TIMESTAMP, date mask dd/mm/yyyy hh24:mi:ss.ff3
+      Terminated by ","
+      Trim whitespace from left and right
+    VALOR_ANTERIOR                  CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    VALOR_NUEVO                     CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+error processing column EVENTO_ID in row 1 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 'e' to a number: EVENTO_ID
+
+Date Cache Statistics for table LOGS_EXT
+  Max Size:      1000
+  Entries :         5
+  Hits    :         0
+  Misses  :         0
+
+
+
+ LOG file opened at 12/06/24 15:31:55
+
+Total Number of Files=1
+
+Data File: logs_ext.csv
+
+Log File: logs_ext.log
+
+
+
+ LOG file opened at 12/06/24 15:31:55
+
+Bad File: logs_ext_bad.log
+
+Field Definitions for table LOGS_EXT
+  Record format DELIMITED BY NEWLINE
+  Data in file has same endianness as the platform
+  Rows with all null fields are accepted
+
+  Fields in Data Source: 
+
+    EVENTO_ID                       CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    USUARIO_ID                      CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    ACCION                          CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    TABLA_AFECTADA                  CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    DETALLE_ACCION                  CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    FECHA_EVENTO                    CHAR (255)
+      Date datatype TIMESTAMP, date mask dd/mm/yyyy hh24:mi:ss.ff3
+      Terminated by ","
+      Trim whitespace from left and right
+    VALOR_ANTERIOR                  CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    VALOR_NUEVO                     CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+error processing column EVENTO_ID in row 1 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 'e' to a number: EVENTO_ID
+error processing column USUARIO_ID in row 2 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 3 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 4 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 5 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 6 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 7 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 8 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 9 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 10 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 11 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 12 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 13 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 14 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 15 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 16 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 17 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 18 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 19 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 20 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 21 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 22 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 23 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 24 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 25 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 26 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 27 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 28 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 29 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 30 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 31 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 32 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 33 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 34 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+
+
+ LOG file opened at 12/06/24 15:32:09
+
+Total Number of Files=1
+
+Data File: logs_ext.csv
+
+Log File: logs_ext.log
+
+
+
+ LOG file opened at 12/06/24 15:32:09
+
+Bad File: logs_ext_bad.log
+
+Field Definitions for table LOGS_EXT
+  Record format DELIMITED BY NEWLINE
+  Data in file has same endianness as the platform
+  Rows with all null fields are accepted
+
+  Fields in Data Source: 
+
+    EVENTO_ID                       CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    USUARIO_ID                      CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    ACCION                          CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    TABLA_AFECTADA                  CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    DETALLE_ACCION                  CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    FECHA_EVENTO                    CHAR (255)
+      Date datatype TIMESTAMP, date mask dd/mm/yyyy hh24:mi:ss.ff3
+      Terminated by ","
+      Trim whitespace from left and right
+    VALOR_ANTERIOR                  CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    VALOR_NUEVO                     CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+error processing column EVENTO_ID in row 1 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 'e' to a number: EVENTO_ID
+error processing column USUARIO_ID in row 2 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 3 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 4 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 5 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 6 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 7 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 8 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 9 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 10 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 11 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 12 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 13 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 14 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 15 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 16 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 17 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 18 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 19 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 20 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 21 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 22 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 23 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 24 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 25 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 26 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 27 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 28 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 29 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 30 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 31 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 32 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 33 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 34 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+
+
+ LOG file opened at 12/06/24 15:52:20
+
+Total Number of Files=1
+
+Data File: logs_ext.csv
+
+Log File: logs_ext.log
+
+
+
+ LOG file opened at 12/06/24 15:52:20
+
+Bad File: logs_ext_bad.log
+
+Field Definitions for table LOGS_EXT
+  Record format DELIMITED BY NEWLINE
+  Data in file has same endianness as the platform
+  Rows with all null fields are accepted
+
+  Fields in Data Source: 
+
+    EVENTO_ID                       CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    USUARIO_ID                      CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    ACCION                          CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    TABLA_AFECTADA                  CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    DETALLE_ACCION                  CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    FECHA_EVENTO                    CHAR (76)
+      Date datatype DATE, date mask dd/mm/yyyy hh24:mi:ss
+      Terminated by ","
+      Trim whitespace from left and right
+    VALOR_ANTERIOR                  CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    VALOR_NUEVO                     CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+error processing column EVENTO_ID in row 1 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 'e' to a number: EVENTO_ID
+error processing column USUARIO_ID in row 2 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 3 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 4 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 5 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 6 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 7 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 8 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 9 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 10 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 11 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 12 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 13 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 14 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 15 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 16 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 17 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 18 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 19 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 20 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 21 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 22 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 23 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 24 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 25 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 26 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 27 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 28 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 29 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 30 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 31 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 32 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 33 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 34 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+
+
+ LOG file opened at 12/06/24 15:54:26
+
+Total Number of Files=1
+
+Data File: logs_ext.csv
+
+Log File: logs_ext.log
+
+
+
+ LOG file opened at 12/06/24 15:54:26
+
+Bad File: logs_ext_bad.log
+
+Field Definitions for table LOGS_EXT
+  Record format DELIMITED BY NEWLINE
+  Data in file has same endianness as the platform
+  Rows with all null fields are accepted
+
+  Fields in Data Source: 
+
+    EVENTO_ID                       CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    USUARIO_ID                      CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    ACCION                          CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    TABLA_AFECTADA                  CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    DETALLE_ACCION                  CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    FECHA_EVENTO                    CHAR (76)
+      Date datatype DATE, date mask dd/mm/yyyy hh24:mi:ss
+      Terminated by ","
+      Trim whitespace from left and right
+    VALOR_ANTERIOR                  CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    VALOR_NUEVO                     CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+error processing column EVENTO_ID in row 1 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 'e' to a number: EVENTO_ID
+error processing column USUARIO_ID in row 2 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 3 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 4 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 5 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 6 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 7 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 8 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 9 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 10 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 11 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 12 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 13 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 14 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 15 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 16 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 17 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 18 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 19 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 20 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 21 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 22 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 23 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 24 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 25 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 26 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 27 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 28 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 29 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 30 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 31 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 32 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 33 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 34 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+
+
+ LOG file opened at 12/06/24 15:55:53
+
+Total Number of Files=1
+
+Data File: logs_ext.csv
+
+Log File: logs_ext.log
+
+
+
+ LOG file opened at 12/06/24 15:55:53
+
+Bad File: logs_ext_bad.log
+
+Field Definitions for table LOGS_EXT
+  Record format DELIMITED BY NEWLINE
+  Data in file has same endianness as the platform
+  Rows with all null fields are accepted
+
+  Fields in Data Source: 
+
+    EVENTO_ID                       CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    USUARIO_ID                      CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    ACCION                          CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    TABLA_AFECTADA                  CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    DETALLE_ACCION                  CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    FECHA_EVENTO                    CHAR (255)
+      Date datatype TIMESTAMP, date mask dd/mm/yyyy hh24:mi:ss
+      Terminated by ","
+      Trim whitespace from left and right
+    VALOR_ANTERIOR                  CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    VALOR_NUEVO                     CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+error processing column EVENTO_ID in row 1 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 'e' to a number: EVENTO_ID
+error processing column USUARIO_ID in row 2 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 3 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 4 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 5 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 6 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 7 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 8 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 9 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 10 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 11 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 12 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 13 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 14 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 15 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 16 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 17 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 18 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 19 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 20 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 21 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 22 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 23 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 24 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 25 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 26 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 27 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 28 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 29 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 30 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 31 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 32 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 33 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 34 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+
+
+ LOG file opened at 12/06/24 15:56:22
+
+Total Number of Files=1
+
+Data File: logs_ext.csv
+
+Log File: logs_ext.log
+
+
+
+ LOG file opened at 12/06/24 15:56:22
+
+Bad File: logs_ext_bad.log
+
+Field Definitions for table LOGS_EXT
+  Record format DELIMITED BY NEWLINE
+  Data in file has same endianness as the platform
+  Rows with all null fields are accepted
+
+  Fields in Data Source: 
+
+    EVENTO_ID                       CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    USUARIO_ID                      CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    ACCION                          CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    TABLA_AFECTADA                  CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    DETALLE_ACCION                  CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    FECHA_EVENTO                    CHAR (255)
+      Date datatype TIMESTAMP, date mask dd/mm/yyyy hh24:mi:ss
+      Terminated by ","
+      Trim whitespace from left and right
+    VALOR_ANTERIOR                  CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    VALOR_NUEVO                     CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+error processing column EVENTO_ID in row 1 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 'e' to a number: EVENTO_ID
+error processing column USUARIO_ID in row 2 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 3 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 4 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 5 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 6 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 7 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 8 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 9 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 10 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 11 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 12 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 13 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 14 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 15 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 16 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 17 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 18 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 19 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 20 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 21 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 22 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 23 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 24 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 25 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 26 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 27 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 28 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 29 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 30 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 31 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 32 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 33 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+error processing column USUARIO_ID in row 34 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 't' to a number: USUARIO_ID
+
+
+ LOG file opened at 12/06/24 15:59:21
+
+Total Number of Files=1
+
+Data File: logs_ext.csv
+
+Log File: logs_ext.log
+
+
+
+ LOG file opened at 12/06/24 15:59:21
+
+Bad File: logs_ext_bad.log
+
+Field Definitions for table LOGS_EXT
+  Record format DELIMITED BY NEWLINE
+  Data in file has same endianness as the platform
+  Rows with all null fields are accepted
+
+  Fields in Data Source: 
+
+    EVENTO_ID                       CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    USUARIO_ID                      CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    ACCION                          CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    TABLA_AFECTADA                  CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    DETALLE_ACCION                  CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    FECHA_EVENTO                    CHAR (255)
+      Date datatype TIMESTAMP, date mask dd/mm/yyyy hh24:mi:ss
+      Terminated by ","
+      Trim whitespace from left and right
+    VALOR_ANTERIOR                  CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    VALOR_NUEVO                     CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+error processing column EVENTO_ID in row 1 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 'e' to a number: EVENTO_ID
+
+Date Cache Statistics for table LOGS_EXT
+  Max Size:      1000
+  Entries :         1
+  Hits    :        32
+  Misses  :         0
+
+
+
+ LOG file opened at 12/06/24 16:00:18
+
+Total Number of Files=1
+
+Data File: logs_ext.csv
+
+Log File: logs_ext.log
+
+
+
+ LOG file opened at 12/06/24 16:00:18
+
+Bad File: logs_ext_bad.log
+
+Field Definitions for table LOGS_EXT
+  Record format DELIMITED BY NEWLINE
+  Data in file has same endianness as the platform
+  Rows with all null fields are accepted
+
+  Fields in Data Source: 
+
+    EVENTO_ID                       CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    USUARIO_ID                      CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    ACCION                          CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    TABLA_AFECTADA                  CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    DETALLE_ACCION                  CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    FECHA_EVENTO                    CHAR (255)
+      Date datatype TIMESTAMP, date mask dd/mm/yyyy hh24:mi:ss
+      Terminated by ","
+      Trim whitespace from left and right
+    VALOR_ANTERIOR                  CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    VALOR_NUEVO                     CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+error processing column EVENTO_ID in row 1 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 'e' to a number: EVENTO_ID
+
+Date Cache Statistics for table LOGS_EXT
+  Max Size:      1000
+  Entries :         1
+  Hits    :        32
+  Misses  :         0
+
+
+
+ LOG file opened at 12/06/24 16:02:09
+
+Total Number of Files=1
+
+Data File: logs_ext.csv
+
+Log File: logs_ext.log
+
+
+
+ LOG file opened at 12/06/24 16:02:09
+
+Bad File: logs_ext_bad.log
+
+Field Definitions for table LOGS_EXT
+  Record format DELIMITED BY NEWLINE
+  Data in file has same endianness as the platform
+  Rows with all null fields are accepted
+
+  Fields in Data Source: 
+
+    EVENTO_ID                       CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    USUARIO                         CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    ACCION                          CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    TABLA_AFECTADA                  CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    DETALLE_ACCION                  CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    FECHA_EVENTO                    CHAR (255)
+      Date datatype TIMESTAMP, date mask dd/mm/yyyy hh24:mi:ss
+      Terminated by ","
+      Trim whitespace from left and right
+    VALOR_ANTERIOR                  CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    VALOR_NUEVO                     CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+error processing column EVENTO_ID in row 1 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 'e' to a number: EVENTO_ID
+
+Date Cache Statistics for table LOGS_EXT
+  Max Size:      1000
+  Entries :         1
+  Hits    :        32
+  Misses  :         0
+
+
+
+ LOG file opened at 12/06/24 16:02:44
+
+Total Number of Files=1
+
+Data File: logs_ext.csv
+
+Log File: logs_ext.log
+
+
+
+ LOG file opened at 12/06/24 16:02:44
+
+Bad File: logs_ext_bad.log
+
+Field Definitions for table LOGS_EXT
+  Record format DELIMITED BY NEWLINE
+  Data in file has same endianness as the platform
+  Rows with all null fields are accepted
+
+  Fields in Data Source: 
+
+    EVENTO_ID                       CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    USUARIO                         CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    ACCION                          CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    TABLA_AFECTADA                  CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    DETALLE_ACCION                  CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    FECHA_EVENTO                    CHAR (255)
+      Date datatype TIMESTAMP, date mask dd/mm/yyyy hh24:mi:ss
+      Terminated by ","
+      Trim whitespace from left and right
+    VALOR_ANTERIOR                  CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    VALOR_NUEVO                     CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+error processing column EVENTO_ID in row 1 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 'e' to a number: EVENTO_ID
+
+Date Cache Statistics for table LOGS_EXT
+  Max Size:      1000
+  Entries :         1
+  Hits    :        32
+  Misses  :         0
+

@@ -31,10 +31,12 @@ where v.estatus_vivienda_id = 1;
 
 prompt creando vista v_servicio_vivienda
 create or replace view v_servicio_vivienda(
-    vivienda_id, direccion, descripcion, servicio_id, 
-    nombre_servicio
+    vivienda_id, es_vacaciones, es_renta,
+    es_venta, direccion, descripcion, 
+    servicio_id, nombre_servicio
 ) as
-select v.vivienda_id, v.direccion, v.descripcion, 
+select v.vivienda_id, v.es_vacaciones, v.es_renta, 
+    v.es_venta, v.direccion, v.descripcion, 
     s.servicio_id, s.nombre
 from vivienda v, servicio_vivienda sv, servicio s
 where v.vivienda_id = sv.vivienda_id
