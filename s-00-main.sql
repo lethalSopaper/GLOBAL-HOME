@@ -2,6 +2,8 @@
 -- Fecha: 05/12/2024
 -- Descripción: Archivo main para crear objetos
 
+whenever sqlerror exit sql.sqlcode rollback
+
 prompt llamando al script s-01-usuarios.sql
 
 start s-01-usuarios.sql
