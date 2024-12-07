@@ -20,6 +20,7 @@ La empresa necesita saber el identificador de la vivienda, clave del estatus, el
 precio inicial y el identificador del usuario dueño de las viviendas de venta estan
 disponibles y de las que están en proceso de compra mostrar el precio final,
 la comision y el usuario interesado en comprarla.
+Se deben oobtener 10 registros
 */
 
 select v.vivienda_id, e.clave, vv.num_catastral,
@@ -34,9 +35,10 @@ where e.clave = 'DISPONIBLE' or e.clave = 'EN VENTA';
 
 /*
 CONSULTA 2:
-Los administradores de global home a decidido que a los 3 dueños de las viviedas vacacioneles
+Los administradores de global home han decidido que a los 3 dueños de las viviedas vacacioneles
 mas populares se les dara un bono de 5000 pesos, para ellos se necesita saber su nombre, su email
-el identificador y la direccion de la vivienda y la cantidad de veces que han alquilado esa vivienda.
+el identificador y la dirección de la vivienda y la cantidad de veces que han alquilado esa vivienda.
+Se deben obtener 20 registros
 */
 
 select u.nombre, u.email, v.vivienda_id, v.direccion, count(*) as veces_alquilada
@@ -51,6 +53,7 @@ order by veces_alquilada desc;
 CONSULTA 3:
 Se requiere saber, el identificador de la vivienda, el tipo de vivienda, la cantidad de servicios
 que ofrecen y las que sean mayores al promedio de servicios se les otorgará una recompensa.
+Se deben obtener 30 registros
 */
 
 select vsv.vivienda_id, vsv.es_vacaciones, vsv.es_renta, vsv.es_venta,
@@ -69,6 +72,7 @@ Se decidio que los usuarios que han rentado, alquilado y comprado una vivienda s
 insignia de oro y un descuento del 10% en su próxima actividad, se necesita saber el identificador
 del usuario, su nombre, apellido paterno, apellido materno (de existir) y el email para contactarlo.
 Con operaciones set: union, intersect, minus.
+Se deben obtener 5 registros
 */
 
 (select u.usuario_id, u.nombre, u.apellido_paterno, u.apellido_materno, u.email

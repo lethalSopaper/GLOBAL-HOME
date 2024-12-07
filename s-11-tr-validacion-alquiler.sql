@@ -136,8 +136,8 @@ begin
                     'UPDATE',
                     'ALQUILER',
                     'Se actualizaron fechas de alquiler y costo_total',
-                    'Fecha inicio: ' || :old.fecha_inicio || ', Fecha fin: ' || :old.fecha_fin,
-                    'Fecha inicio: ' || :new.fecha_inicio || ', Fecha fin: ' || :new.fecha_fin
+                    'Fecha inicio: ' || :old.fecha_inicio || '; Fecha fin: ' || :old.fecha_fin,
+                    'Fecha inicio: ' || :new.fecha_inicio || '; Fecha fin: ' || :new.fecha_fin
                 );
             end if;
         when deleting then

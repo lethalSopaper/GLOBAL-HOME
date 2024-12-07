@@ -32,3 +32,9 @@ evento_id,usuario_id,accion,tabla_afectada,detalle_accion,fecha_evento,valor_ant
 31,tu_proy_admin,INSERT,ALQUILER,Se inserto un nuevo alquiler,06/12/2024 16:00:00,NULL,31
 32,tu_proy_admin,INSERT,ALQUILER,Se inserto un nuevo alquiler,06/12/2024 16:00:00,NULL,32
 33,tu_proy_admin,INSERT,ALQUILER,Se inserto un nuevo alquiler,06/12/2024 16:00:00,NULL,33
+34,tu_proy_admin,UPDATE,ALQUILER,Se actualizaron fechas de alquiler y costo_total,06/12/2024 16:00:00,Fecha inicio: 06/12/2024; Fecha fin: 07/12/2024,Fecha inicio: 06/12/2024; Fecha fin: 07/12/2024
+35,tu_proy_admin,UPDATE,ALQUILER,Se actualizaron fechas de alquiler y costo_total,06/12/2024 16:00:00,Fecha inicio: 07/12/2024; Fecha fin: 08/12/2024,Fecha inicio: 07/12/2024; Fecha fin: 08/12/2024
+36,tu_proy_admin,UPDATE,ALQUILER,Se actualizaron fechas de alquiler y costo_total,06/12/2024 16:00:00,Fecha inicio: 08/12/2024; Fecha fin: 09/12/2024,Fecha inicio: 08/12/2024; Fecha fin: 09/12/2024
+37,tu_proy_admin,UPDATE,ALQUILER,Se actualizaron fechas de alquiler y costo_total,06/12/2024 16:00:00,Fecha inicio: 09/12/2024; Fecha fin: 10/12/2024,Fecha inicio: 09/12/2024; Fecha fin: 10/12/2024
+38,tu_proy_admin,UPDATE,ALQUILER,Se actualizaron fechas de alquiler y costo_total,06/12/2024 16:00:00,Fecha inicio: 10/12/2024; Fecha fin: 11/12/2024,Fecha inicio: 10/12/2024; Fecha fin: 11/12/2024
+39,tu_proy_admin,UPDATE,ALQUILER,Se actualizaron fechas de alquiler y costo_total,06/12/2024 16:00:00,Fecha inicio: 11/12/2024; Fecha fin: 12/12/2024,Fecha inicio: 11/12/2024; Fecha fin: 12/12/2024
