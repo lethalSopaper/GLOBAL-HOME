@@ -87,3 +87,14 @@ intersect
 from TU_usuario u
 join compra c on u.usuario_id = c.usuario_id)
 order by usuario_id;
+
+/* CONSULTA 5:
+(de la tabla externa logs_ext)
+Se desea saber para la todas las modificaciones de la tabla alquiler, la fecha del evento, el usuario, el detalle de la acción, el valor anterior y el valor nuevo.
+Se deben obtener 6 registros
+ */
+
+select fecha_evento, usuario, accion, valor_anterior, valor_nuevo
+from logs_ext
+where tabla_afectada = 'ALQUILER'
+and accion = 'UPDATE';
