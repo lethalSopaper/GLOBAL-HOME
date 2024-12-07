@@ -67,7 +67,7 @@ create table vivienda (
     constraint vivienda_pk primary key(vivienda_id),
     constraint vivienda_estatus_vivienda_id_fk foreign key(estatus_vivienda_id) 
         references estatus_vivienda(estatus_vivienda_id),
-    constraint vivienda_usuario_dueño_id_fk foreign key(usuario_duenio_id) 
+    constraint vivienda_usuario_duenio_id_fk foreign key(usuario_duenio_id) 
         references usuario(usuario_id),
     constraint vivienda_jerarquia_chk check(
         (es_vacaciones = true and es_renta = true and es_venta = false) or

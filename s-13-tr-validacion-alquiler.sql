@@ -38,11 +38,12 @@ begin
             select v.estatus_vivienda_id into v_estatus_vivienda_id
             from vivienda v
             where v.vivienda_id = v_vivienda_alquilada_id;
-
             if v_estatus_vivienda_id != 1 then
                 raise_application_error(-20000, 'La vivienda no esta disponible');
             end if;
-
+            if :new.fecha_inicio >= :new.fecha_fin then
+                raise_application_error(-20001, 'La fecha de inicio debe ser menor a la fecha de fin');
+            end if;
             -- Actualizar estatus de la vivienda
             update vivienda set
                 estatus_vivienda_id = 3,
@@ -63,7 +64,7 @@ begin
             );
             --Validar que el costo_total no sea insertado manualmente
             if :new.costo_total is not null then
-                raise_application_error(-20001, 'No se puede insertar el costo total manualmente');
+                raise_application_error(-20002, 'No se puede insertar el costo total manualmente');
             end if;
             -- Calcular costo total
             v_fecha_inicio_alquiler := :new.fecha_inicio;
@@ -72,7 +73,7 @@ begin
             :new.costo_total := calcular_total_alquiler(v_vivienda_alquilada_id, v_fecha_inicio_alquiler, v_fecha_fin_alquiler);
             -- Validar que el folio no sea insertado manualmente
             if :new.folio is not null then
-                raise_application_error(-20001, 'No se puede insertar el folio manualmente');
+                raise_application_error(-20002, 'No se puede insertar el folio manualmente');
             end if;
             -- Calcular folio
             :new.folio := calcular_folio_alquiler(v_fecha_inicio_alquiler);
@@ -97,19 +98,19 @@ begin
         when updating then
             -- Validar que no se pueda cambiar la vivienda
             if :old.vivienda_vacaciones_id != :new.vivienda_vacaciones_id then
-                raise_application_error(-20002, 'No se puede cambiar la vivienda');
+                raise_application_error(-20003, 'No se puede cambiar la vivienda');
             end if;
             -- Validar que no se pueda cambiar el cliente que alquila
             if :old.usuario_id != :new.usuario_id then
-                raise_application_error(-20003, 'No se puede cambiar el cliente que alquila');
+                raise_application_error(-20004, 'No se puede cambiar el cliente que alquila');
             end if;
             -- Validar si se modifica el costo_total
             if :old.costo_total != :new.costo_total then
-                raise_application_error(-20004, 'No se puede modificar el costo total directamente');
+                raise_application_error(-20005, 'No se puede modificar el costo total directamente');
             end if;
             -- Validar si se modifica el folio
             if :old.folio != :new.folio then
-                raise_application_error(-20005, 'No se puede modificar el folio');
+                raise_application_error(-20006, 'No se puede modificar el folio directamente');
             end if;
             -- Obtener id de la vivienda alquilada
             v_vivienda_alquilada_id := :new.vivienda_vacaciones_id;
@@ -119,6 +120,9 @@ begin
                 v_fecha_inicio_alquiler := :new.fecha_inicio;
                 v_fecha_fin_alquiler := :new.fecha_fin;
 
+                if :new.fecha_inicio >= :new.fecha_fin then
+                    raise_application_error(-20001, 'La fecha de inicio debe ser menor a la fecha de fin');
+                end if;
                 :new.costo_total := calcular_total_alquiler(v_vivienda_alquilada_id, v_fecha_inicio_alquiler, 
                     v_fecha_fin_alquiler);
 
@@ -141,7 +145,7 @@ begin
                 );
             end if;
         when deleting then
-            raise_application_error(-20006, 'No se pueden eliminar alquileres');
+            raise_application_error(-20007, 'No se pueden eliminar alquileres');
 
     end case;
 

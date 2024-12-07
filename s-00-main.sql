@@ -53,13 +53,13 @@ prompt llamando al script s-28-fx-obtener-blob-de-pdf.sql
 
 start s-28-fx-obtener-blob-de-pdf.sql
 
-prompt llamando al scrip s-11-tr-validacion-alquiler.sql
+prompt llamando al script s-11-tr-validacion-vivienda.sql
 
-start s-11-tr-validacion-alquiler.sql
+start s-11-tr-validacion-vivienda.sql
 
-prompt llamando al script s-13-tr-validacion-vivienda.sql
+prompt llamando al scrip s-13-tr-validacion-alquiler.sql
 
-start s-13-tr-validacion-vivienda.sql
+start s-13-tr-validacion-alquiler.sql
 
 prompt llamando al script s-20-p-insercion-de-logs.sql
 

@@ -14,6 +14,7 @@ create or replace trigger tr_validacion_vivienda
 before insert or update or delete on vivienda
 for each row
 declare
+    v_vivienda_id number;
     v_estatus_vivienda_disponible number(10);
     v_estatus_vivienda_inactiva number(10);
     v_estatus_vivienda_vendida number(10);
@@ -23,27 +24,26 @@ declare
 begin
 
     if inserting then
-        select e.estatus_vivienda_id into v_estatus_vivienda_disponible
-        from estatus_vivienda e
-        where e.clave = 'DISPONIBLE';
+        select estatus_vivienda_id into v_estatus_vivienda_disponible
+        from estatus_vivienda 
+        where clave = 'DISPONIBLE';
 
         if :new.estatus_vivienda_id != v_estatus_vivienda_disponible then
             raise_application_error(-20001, 'La vivienda no esta disponible');
         end if;
-
         --insertando en historico_estatus_vivienda
-        insert into historico_estatus_vivienda(
-            historico_estatus_vivienda_id,
-            fecha_estatus,
-            estatus_vivienda_id,
-            vivienda_id
-        ) values(
-            historico_estatus_vivienda_seq.nextval,
-            sysdate,
-            :new.estatus_vivienda_id, -- disponible
-            :new.vivienda_id
-        );
-
+        -- insert into historico_estatus_vivienda(
+        --     historico_estatus_vivienda_id,
+        --     fecha_estatus,
+        --     estatus_vivienda_id,
+        --     vivienda_id
+        -- ) values(
+        --     historico_estatus_vivienda_seq.nextval,
+        --     sysdate,
+        --     :new.estatus_vivienda_id, -- disponible
+        --     :new.vivienda_id
+        -- );
+        
         -- insertando en tabla temporal
         insert into operaciones_temp(
             operaciones_temp_id,
@@ -74,7 +74,11 @@ begin
         select e.estatus_vivienda_id into v_estatus_vivienda_en_venta
         from estatus_vivienda e
         where e.clave = 'EN VENTA';
-        -- validadno que se intente cambiar a inactiva
+            
+        select estatus_vivienda_id into v_estatus_vivienda_disponible
+        from estatus_vivienda 
+        where clave = 'DISPONIBLE';
+        -- validando que se intente cambiar a inactiva
         if :new.estatus_vivienda_id = v_estatus_vivienda_inactiva then
             --validando que el estatus anterior sea disponible
             if :old.estatus_vivienda_id != v_estatus_vivienda_disponible then
@@ -83,54 +87,59 @@ begin
             --actualizando la fecha_estatus
             :new.fecha_estatus := sysdate;
             --insertando en historico_estatus_vivienda
-            insert into historico_estatus_vivienda(
-                historico_estatus_vivienda_id,
-                fecha_estatus,
-                estatus_vivienda_id,
-                vivienda_id
-            ) values(
-                historico_estatus_vivienda_seq.nextval,
-                sysdate,
-                :new.estatus_vivienda_id, -- inactiva
-                :new.vivienda_id
-            );
+            -- insert into historico_estatus_vivienda(
+            --     historico_estatus_vivienda_id,
+            --     fecha_estatus,
+            --     estatus_vivienda_id,
+            --     vivienda_id
+            -- ) values(
+            --     historico_estatus_vivienda_seq.nextval,
+            --     sysdate,
+            --     :new.estatus_vivienda_id, -- inactiva
+            --     :new.vivienda_id
+            -- );
+        end if;
+        -- validando que una propiedad no se pueda poner en venta si no esta en compra
+        if :new.estatus_vivienda_id = v_estatus_vivienda_en_venta then
+            select count(*) into v_vivienda_id
+            from compra c
+            where c.vivienda_venta_id = :new.vivienda_id;
+            if v_vivienda_id = 0 then
+                raise_application_error(-20003, 'No se puede poner en venta una vivienda que no ha sido comprada');
+            end if;
         end if;
         -- validadndo que se intente cambiar a vendida
         if :new.estatus_vivienda_id = v_estatus_vivienda_vendida THEN
             --validando que el estatus anterior sea en venta
             if :old.estatus_vivienda_id = v_estatus_vivienda_en_venta then
+                --validando que el pago se completo
                 select sum(p.importe) into v_sum_pagos
-                from vivienda v
-                join vivienda_venta vv on v.vivienda_id = vv.vivienda_venta_id
-                join compra c on vv.vivienda_venta_id = c.vivienda_venta_id
-                join pago p on c.vivienda_venta_id = p.vivienda_venta_id
-                where v.vivienda_id = :new.vivienda_id;
+                from pago p
+                join compra c on p.vivienda_venta_id = c.vivienda_venta_id 
+                where c.vivienda_venta_id = :new.vivienda_id;
 
                 select c.precio_final into v_total_pagos
-                from vivienda v
-                join vivienda_venta vv on v.vivienda_id = vv.vivienda_venta_id
-                join compra c on vv.vivienda_venta_id = c.vivienda_venta_id
-                where v.vivienda_id = :new.vivienda_id;
-
+                from compra c
+                where c.vivienda_venta_id = :new.vivienda_id;
                 if v_sum_pagos < v_total_pagos then
-                    raise_application_error(-20003, 'El pago no se ha completado');
+                    raise_application_error(-20004, 'El pago no se ha completado');
                 end if;
                 --actualizando la fecha_estatus
                 :new.fecha_estatus := sysdate;
                 --insertando en historico_estatus_vivienda
-                insert into historico_estatus_vivienda(
-                    historico_estatus_vivienda_id,
-                    fecha_estatus,
-                    estatus_vivienda_id,
-                    vivienda_id
-                ) values(
-                    historico_estatus_vivienda_seq.nextval,
-                    sysdate,
-                    :new.estatus_vivienda_id, -- vendida
-                    :new.vivienda_id
-                );
+                -- insert into historico_estatus_vivienda(
+                --     historico_estatus_vivienda_id,
+                --     fecha_estatus,
+                --     estatus_vivienda_id,
+                --     vivienda_id
+                -- ) values(
+                --     historico_estatus_vivienda_seq.nextval,
+                --     sysdate,
+                --     :new.estatus_vivienda_id, -- vendida
+                --     :new.vivienda_id
+                -- );
             else
-                raise_application_error(-20004, 'El estatus anterior debe ser en venta');
+                raise_application_error(-20005, 'El estatus anterior debe ser en venta');
             end if;
         end if;
         -- insertando en la tabla temporal en cada caso de que se actualice un valor
@@ -275,7 +284,7 @@ begin
             );
         end if;
     elsif deleting then
-        raise_application_error(-20005, 'No se pueden eliminar viviendas, en dado caso se puede cambiar el estatus a inactiva');
+        raise_application_error(-20006, 'No se pueden eliminar viviendas, en dado caso se puede cambiar el estatus a inactiva');
     end if;
 end;
 /

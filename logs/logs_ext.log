@@ -1264,3 +1264,60 @@ Date Cache Statistics for table LOGS_EXT
   Hits    :        32
   Misses  :         0
 
+
+
+ LOG file opened at 12/07/24 00:41:59
+
+Total Number of Files=1
+
+Data File: logs_ext.csv
+
+Log File: logs_ext.log
+
+
+
+ LOG file opened at 12/07/24 00:41:59
+
+Bad File: logs_ext_bad.log
+
+Field Definitions for table LOGS_EXT
+  Record format DELIMITED BY NEWLINE
+  Data in file has same endianness as the platform
+  Rows with all null fields are accepted
+
+  Fields in Data Source: 
+
+    EVENTO_ID                       CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    USUARIO                         CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    ACCION                          CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    TABLA_AFECTADA                  CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    DETALLE_ACCION                  CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    FECHA_EVENTO                    CHAR (255)
+      Date datatype TIMESTAMP, date mask dd/mm/yyyy hh24:mi:ss
+      Terminated by ","
+      Trim whitespace from left and right
+    VALOR_ANTERIOR                  CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+    VALOR_NUEVO                     CHAR (255)
+      Terminated by ","
+      Trim whitespace from left and right
+error processing column EVENTO_ID in row 1 for datafile /unam/bd/proyecto/GLOBAL-HOME/logs/logs_ext.csv
+ORA-01722: unable to convert string value containing 'e' to a number: EVENTO_ID
+
+Date Cache Statistics for table LOGS_EXT
+  Max Size:      1000
+  Entries :         1
+  Hits    :        32
+  Misses  :         0
+
