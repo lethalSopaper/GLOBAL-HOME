@@ -5,7 +5,7 @@
 create or replace procedure p_manejo_de_commit as
 
 begin
-    insercion_de_logs;
+    p_insercion_de_logs;
     DBMS_OUTPUT.PUT_LINE('Se ha realizado un commit');
     commit;
 end;

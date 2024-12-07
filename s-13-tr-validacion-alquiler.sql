@@ -110,17 +110,16 @@ begin
             end if;
             -- Validar si se modifica el folio
             if :old.folio != :new.folio then
-                raise_application_error(-20006, 'No se puede modificar el folio directamente');
+                raise_application_error(-20006, 'No se puede modificar el folio');
             end if;
             -- Obtener id de la vivienda alquilada
             v_vivienda_alquilada_id := :new.vivienda_vacaciones_id;
             -- Validar si se cambiaron las fechas de inicio o fin
-            if :old.fecha_inicio != :new.fecha_inicio or :old.fecha_fin != :new.fecha_fin then
+            if (:old.fecha_inicio != :new.fecha_inicio or :old.fecha_fin != :new.fecha_fin)  then
                 -- Calcular nuevo costo total
                 v_fecha_inicio_alquiler := :new.fecha_inicio;
                 v_fecha_fin_alquiler := :new.fecha_fin;
-
-                if :new.fecha_inicio >= :new.fecha_fin then
+                if v_fecha_inicio_alquiler >= v_fecha_fin_alquiler then
                     raise_application_error(-20001, 'La fecha de inicio debe ser menor a la fecha de fin');
                 end if;
                 :new.costo_total := calcular_total_alquiler(v_vivienda_alquilada_id, v_fecha_inicio_alquiler, 

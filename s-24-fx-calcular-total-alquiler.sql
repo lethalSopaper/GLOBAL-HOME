@@ -7,7 +7,7 @@ create or replace function calcular_total_alquiler(
     p_fecha_inicio in date,
     p_fecha_fin in date
 ) return number is
-    v_costo_total number(10,2);
+    v_costo_total number(11,2);
     v_dias_alquiler number(10);
     v_costo_dia vivienda_vacaciones.costo_dia%type;
     v_costo_apartado vivienda_vacaciones.costo_apartado%type;
@@ -22,7 +22,7 @@ begin
     select costo_dia, costo_apartado, max_dias into v_costo_dia, v_costo_apartado, v_max_dias
     from vivienda_vacaciones
     where vivienda_vacaciones_id = p_vivienda_id;
-
+    -- truena en fechas negativas
     v_dias_alquiler := p_fecha_fin - p_fecha_inicio;
 
     if v_dias_alquiler > v_max_dias then
