@@ -2,7 +2,7 @@
 -- Fecha: 04/12/2024
 -- Descripcion: Creacion de un procedimiento que inserte logs en el archivo logs_ext.csv
 
-create or replace procedure insercion_de_logs as
+create or replace procedure p_insercion_de_logs as
     v_file utl_file.file_type;
 
     cursor c_operaciones is
