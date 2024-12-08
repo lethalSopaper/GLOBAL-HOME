@@ -23,3 +23,4 @@ begin
     where mensaje_id = p_mensaje_respondido_id;
 end;
 /
+show errors;
