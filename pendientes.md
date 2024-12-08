@@ -2,14 +2,11 @@
 
 ## Consultas
 
-- [ ] Consulta a la tabla externa
 - [ ] Consulta a una tabla temporal
 
 ## Triggers
 
-
-- [ ] Faltan prubas para los triggers
-
+- [ ] Faltan pruebas para los triggers
 - [ ] Crear más trigger (opcional)
 
 ## Procedimientos

@@ -37,8 +37,7 @@ cuando se actuazlice la contraseña: debe tener las mismas caracteristicas y hac
 4
 triger de renta
 
-para insertar el estatus de la vivienda debe de estar disponible,
-y se tendra que actualizar  el estatus a en renta, actulaizar la fecha de estatus, 
+para insertar el estatus de la vivienda debe de estar disponible, la fecha fin debe de ser mayor a la fecha inicio y menor al sysdate y se tendra que actualizar  el estatus a en renta, actulaizar la fecha de estatus, 
 y insertar en el historico.
 
 cuando se actualiza una renta se añáde al csv log.
