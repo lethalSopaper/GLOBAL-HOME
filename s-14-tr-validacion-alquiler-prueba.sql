@@ -290,7 +290,7 @@ begin
         when others then
             dbms_output.put_line('ERROR INESEPERADO');
     end;
-
+    -- Eliminar
     begin
         dbms_output.put_line('Caso 12: Validando que no se pueda eliminar un alquiler');
         delete from alquiler

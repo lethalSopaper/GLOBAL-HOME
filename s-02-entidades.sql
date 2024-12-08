@@ -268,6 +268,7 @@ create table renta(
     renta_id number(10,0),
     folio_contrato varchar2(8) not null,
     fecha_inicio date not null,
+    fecha_fin date,
     contrato blob not null,
     vivienda_renta_id not null,
     usuario_id not null,
@@ -299,12 +300,13 @@ create table compra(
 prompt Creando tabla pago
 
 create table pago(
-    num_pago number(10,0),
+    num_pago number(3,0),
     vivienda_venta_id,
     fecha_pago date default sysdate not null,
     importe number(11,2) not null,  
     recibo blob not null,   
     constraint pago_vivienda_venta_id_fk foreign key(vivienda_venta_id)
         references vivienda_venta(vivienda_venta_id),
-    constraint pago_pk primary key(vivienda_venta_id, num_pago)
+    constraint pago_pk primary key(vivienda_venta_id, num_pago),
+    constraint pago_num_pago_chk check(num_pago <= 240)
 );
