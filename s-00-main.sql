@@ -41,17 +41,17 @@ prompt llamando al script s-04-tablas-externas.sql
 
 start s-04-tablas-externas.sql
 
-prompt llamando al script s-24-fx-calcular-total-alquiler.sql
+prompt llamando al script s-28-fx-calcular-total-alquiler.sql
 
-start s-24-fx-calcular-total-alquiler.sql
+start s-28-fx-calcular-total-alquiler.sql
 
-prompt llamando al script s-26-fx-calcular-folio-alquiler.sql
+prompt llamando al script s-30-fx-calcular-folio-alquiler.sql
 
-start s-26-fx-calcular-folio-alquiler.sql
+start s-30-fx-calcular-folio-alquiler.sql
 
-prompt llamando al script s-28-fx-obtener-blob-de-pdf.sql
+prompt llamando al script s-32-fx-obtener-blob-de-pdf.sql
 
-start s-28-fx-obtener-blob-de-pdf.sql
+start s-32-fx-obtener-blob-de-pdf.sql
 
 prompt llamando al script s-11-tr-validacion-vivienda.sql
 

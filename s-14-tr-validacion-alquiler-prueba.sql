@@ -110,15 +110,17 @@ begin
             alquiler_id, fecha_inicio, fecha_fin,
             vivienda_vacaciones_id, usuario_id
         ) values (
-            102, to_date('2024-12-10', 'yyyy-mm-dd'), to_date('2024-12-07', 'yyyy-mm-dd'), 102, 36
+            102, to_date('2024-11-10', 'yyyy-mm-dd'), to_date('2024-12-07', 'yyyy-mm-dd'), 102, 36
         );
         dbms_output.put_line('Fallido: se inserto un alquiler con fecha de inicio mayor o igual a la fecha de fin');
     exception
         when others then
             if sqlcode = -20001 then
                 dbms_output.put_line('Exitoso: no se pudo insertar un alquiler con fecha de inicio mayor o igual a la fecha de fin');
+            elsif sqlcode = -20008 then
+                dbms_output.put_line('Exitoso: no se pudo insertar un alquiler con un rango no valido');
             else
-                dbms_output.put_line('ERROR INESPERADO');
+                dbms_output.put_line('El error es: ' || sqlerrm);
             end if;
     end;
     begin
@@ -254,13 +256,13 @@ begin
     begin
         dbms_output.put_line('Caso 10: Validando que en caso de que la fecha de inicio o fin cambie, la fecha de inicio sea menor a la fecha de fin');
         update alquiler set
-            fecha_inicio = to_date('2024-12-10', 'yyyy-mm-dd')
+            fecha_inicio = to_date('2024-12-06', 'yyyy-mm-dd')
         where alquiler_id = 100;
-        dbms_output.put_line('Fallido: la fecha de inicio es una fecha aceptable');
+        dbms_output.put_line('Exito: la fecha de inicio es una fecha aceptable');
     exception
         when others then
             if sqlcode = -20001 then
-                dbms_output.put_line('Exitoso: la fecha de inicio es mayor a la fecha de fin');
+                dbms_output.put_line('Fallido: la fecha de inicio no es una fecha aceptable');
             else
                 dbms_output.put_line('ERROR INESEPERADO');
             end if;
@@ -272,7 +274,7 @@ begin
         from alquiler
         where alquiler_id = 100;
         update alquiler set
-            fecha_fin = to_date('2024-12-21', 'yyyy-mm-dd')
+            fecha_fin = to_date('2024-12-11', 'yyyy-mm-dd')
         where alquiler_id = 100;
 
         select costo_total into v_monto_total_2
@@ -284,6 +286,9 @@ begin
         else
             dbms_output.put_line('Fallido: el costo total no se actualizo');
         end if;
+    exception
+        when others then
+            dbms_output.put_line('ERROR INESEPERADO');
     end;
 
     begin

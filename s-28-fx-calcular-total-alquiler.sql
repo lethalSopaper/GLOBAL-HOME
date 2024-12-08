@@ -26,18 +26,19 @@ begin
     v_dias_alquiler := p_fecha_fin - p_fecha_inicio;
 
     if v_dias_alquiler > v_max_dias then
-        raise_application_error(-20000, 'El número de días de alquiler excede el máximo permitido');
+        raise_application_error(-20008, 'El número de días de alquiler excede el máximo permitido');
+    elsif v_dias_alquiler < 0 then
+        raise_application_error(-20010, 'La fecha de fin es menor a la fecha de inicio');
+
     end if;
 
     v_costo_total := v_costo_dia * v_dias_alquiler + v_costo_apartado;
 
     return v_costo_total;
-
+    
 exception
     when no_data_found then
-        raise_application_error(-20001, 'No se encontró la vivienda');
-    when others then
-        raise_application_error(-20002, 'Error al calcular el total del alquiler');
+        raise_application_error(-20009, 'No se encontró la vivienda');
 end;
 /
 show errors;
