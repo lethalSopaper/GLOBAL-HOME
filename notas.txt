@@ -81,4 +81,3 @@ ser insertado en una tabla.
 El folio de alquiler es un identificador único que debe crearse automáticamente cuando se realiza un alquiler de una vivienda 
 para vacaciones. Esta función generará el folio basado en el año, mes y un número secuencial único.
 
-3. Funcion que 

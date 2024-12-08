@@ -16,6 +16,7 @@
 
 - [ ] Crear dos procedimientos con cursor
 - [ ] Pruebas de los porcedimientos
+- [ ] Crear un procedimiento que genera un resumen de las ganancias para cada vivienda al igual de las encuestas realizadas para las viviendas vacaciones.
 
 NOTE: (podemos implementar procediminetos para las tablas temporales que habiasmos hablado en crear y el de mensajes)
 
