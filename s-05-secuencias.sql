@@ -149,7 +149,7 @@ create sequence renta_seq
 -- Secuencia para la tabla operaciones_temp
 
 create sequence operaciones_temp_seq
-    start with 34
+    start with 40
     increment by 1
     nomaxvalue
     nominvalue

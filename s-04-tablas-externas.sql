@@ -2,6 +2,14 @@
 -- Fecha: 04/11/2024
 -- Descripción: Creación de tablas externas para la carga de datos
 
+prompt conectando con sys 
+connect sys/system1@htblugbd_s2 as sysdba
+
+-- Crear un directorio para la tabla externa
+prompt creando el directorio para la tabla externa
+create or replace directory logs_dir as '/unam/bd/proyecto/GLOBAL-HOME/logs';
+-- Conceder permisos al usuario
+grant read, write on directory logs_dir to tu_proy_admin;
 -- Eliminar la tabla logs_ext si ya existe
 begin
     execute immediate 'drop table logs_ext';
@@ -12,6 +20,9 @@ exception
     end if;
 end;
 /
+
+prompt conectando como tu_proy_admin
+connect tu_proy_admin/1234@htblugbd_s2
 
 -- Crear la tabla externa para los logs de actividades
 create table logs_ext (

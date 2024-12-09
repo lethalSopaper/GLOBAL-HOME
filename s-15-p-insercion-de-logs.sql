@@ -13,7 +13,7 @@ create or replace procedure p_insercion_de_logs as
 
 begin
 
-    v_file := utl_file.fopen('logs_dir', 'logs_ext.csv', 'a');
+    v_file := utl_file.fopen('LOGS_DIR', 'logs_ext.csv', 'a');
     for v_operacion in c_operaciones loop
         utl_file.put_line(v_file,
         v_operacion.operaciones_temp_id || ',' ||
