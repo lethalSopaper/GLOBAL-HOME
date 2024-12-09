@@ -21,6 +21,10 @@ begin
     update mensaje set
     mensaje_respuesta_id = p_mensaje_respuesta_id
     where mensaje_id = p_mensaje_respondido_id;
+
+exception
+    when others then
+        raise_application_error(-30001, 'Error al insertar el mensaje de respuesta');
 end;
 /
 show errors;
