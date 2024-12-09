@@ -71,3 +71,15 @@ end;
 /
 -- Conceder permisos al usuario
 grant read, write on directory pdf_avaluo to tu_proy_admin;
+prompt creando el directorio para la interfaz
+begin
+    execute immediate 'create directory interfaz as ''/unam/bd/proyecto/GLOBAL-HOME/interfaz''';
+exception
+    when others then
+        if sqlcode != -955 then
+            raise;
+        end if;
+end;
+/
+-- Conceder permisos al usuario
+grant read, write on directory interfaz to tu_proy_admin;
