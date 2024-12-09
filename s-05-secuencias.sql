@@ -157,3 +157,13 @@ create sequence operaciones_temp_seq
     cache 20
     noorder
 ;
+
+create sequence folio_alquiler_seq
+    start with 1
+    increment by 1
+    maxvalue 9999
+    minvalue 1
+    cycle
+    nocache
+    noorder
+;

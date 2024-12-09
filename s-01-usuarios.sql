@@ -60,7 +60,7 @@ grant read, write on directory logs_dir to tu_proy_admin;
 
 prompt creando el directorio para los contratos en pdf
 begin
-    execute immediate 'create directory pdf_contrato as ''/unam/bd/proyecto/GLOBAL-HOME/PDF/contratos''';
+    execute immediate 'create directory pdf_contrato as ''/unam/bd/proyecto/GLOBAL-HOME/pdf/contratos''';
 exception
     when others then
         if sqlcode != -955 then
@@ -73,7 +73,7 @@ grant read, write on directory pdf_contrato to tu_proy_admin;
 
 prompt creando el directorio para los avaluos de propiedad
 begin
-    execute immediate 'create directory pdf_avaluo as ''/unam/bd/proyecto/GLOBAL-HOME/PDF/avaluos_propiedad''';
+    execute immediate 'create directory pdf_avaluo as ''/unam/bd/proyecto/GLOBAL-HOME/pdf/avaluos_propiedad''';
 exception
     when others then
         if sqlcode != -955 then

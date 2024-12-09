@@ -12,6 +12,14 @@ prompt llamando al script s-02-entidades.sql
 
 start s-02-entidades.sql
 
+prompt llamando al script s-03-tablas-temporales.sql
+
+start s-03-tablas-temporales.sql
+
+prompt llamando al script s-04-tablas-externas.sql
+
+start s-04-tablas-externas.sql
+
 prompt llamando al script s-05-secuencias.sql
 
 start s-05-secuencias.sql
@@ -33,25 +41,17 @@ prompt llamando al script s-09-carga-inicial.sql
 
 start s-09-carga-inicial.sql
 
-prompt llamando al script s-03-tablas-temporales.sql
+prompt llamando al script s-24-fx-calcular-total-alquiler.sql
 
-start s-03-tablas-temporales.sql
+start s-24-fx-calcular-total-alquiler.sql
 
-prompt llamando al script s-04-tablas-externas.sql
+prompt llamando al script s-26-fx-calcular-folio-alquiler.sql
 
-start s-04-tablas-externas.sql
+start s-26-fx-calcular-folio-alquiler.sql
 
-prompt llamando al script s-28-fx-calcular-total-alquiler.sql
+prompt llamando al script s-28-fx-obtener-blob-de-pdf.sql
 
-start s-28-fx-calcular-total-alquiler.sql
-
-prompt llamando al script s-30-fx-calcular-folio-alquiler.sql
-
-start s-30-fx-calcular-folio-alquiler.sql
-
-prompt llamando al script s-32-fx-obtener-blob-de-pdf.sql
-
-start s-32-fx-obtener-blob-de-pdf.sql
+start s-28-fx-obtener-blob-de-pdf.sql
 
 prompt llamando al script s-11-tr-validacion-vivienda.sql
 
@@ -61,10 +61,18 @@ prompt llamando al scrip s-13-tr-validacion-alquiler.sql
 
 start s-13-tr-validacion-alquiler.sql
 
-prompt llamando al script s-20-p-insercion-de-logs.sql
+prompt llamando al script s-15-p-insercion-de-logs.s
 
-start s-20-p-insercion-de-logs.sql
+start s-15-p-insercion-de-logs.sql
 
-prompt llamando al script s-22-p-manejo-de-commit.sql
+prompt s-18-insercion-mensaje-respuesta.sql
 
-start s-22-p-manejo-de-commit.sql
+start s-18-p-insercion-mensaje-respuesta.sql
+
+prompt llamando al script s-20-p-calcular-ganancia-total-rentas.sql
+
+start s-20-p-calcular-ganancia-total-rentas.sql
+
+prompt llamando al script s-22-p-resumen-vivienda-duenios.sql
+
+start s-22-p-resumen-vivienda-duenios.sql

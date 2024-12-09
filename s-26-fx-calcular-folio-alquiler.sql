@@ -14,22 +14,24 @@ is
     v_dia_del_anio number(3);
     v_consecutivo number(3);
 begin
+    -- Validar que la fecha de alquiler no sea nula
+    if p_fecha_alquiler is null then
+        raise_application_error(-20011, 'La fecha de alquiler no puede ser nula');
+    end if;
     -- Obtener los últimos dos dígitos del año
-    select to_number(to_char(p_fecha_alquiler, 'yy')) into v_ultimos_dos_digitos from dual;
+    select to_number(to_char(p_fecha_alquiler, 'y')) into v_ultimos_dos_digitos from dual;
 
     -- Obtener el día del año (en formato de 3 dígitos)
     select to_number(to_char(p_fecha_alquiler, 'ddd')) into v_dia_del_anio from dual;
 
-    -- Obtener el contador de alquileres del día específico
-    select nvl(count(*), 0) + 1 into v_consecutivo
-    from alquiler
-    where to_char(fecha_inicio, 'yy') = to_char(p_fecha_alquiler, 'yy')
-      and to_char(fecha_inicio, 'ddd') = to_char(p_fecha_alquiler, 'ddd');
+    -- Obtener el consecutivo de alquileres en el día
+    select folio_alquiler_seq.nextval into v_consecutivo from dual;
 
     -- Crear el folio con el día del año y el contador
-    v_folio := v_ultimos_dos_digitos || lpad(v_dia_del_anio, 3, '0') || lpad(v_consecutivo, 3, '0');
+    v_folio := v_ultimos_dos_digitos || lpad(v_dia_del_anio, 3, '0') || lpad(v_consecutivo, 4, '0');
 
     return v_folio;
+
 end;
 /
-
+show errors;
