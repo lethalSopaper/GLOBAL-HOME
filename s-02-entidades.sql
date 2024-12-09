@@ -110,7 +110,7 @@ prompt Creando tabla servicio
 create table servicio(
     servicio_id number(10,0),
     nombre varchar2(32) not null,
-    descripcion varchar2(200),
+    descripcion varchar2(200) not null,
     icono blob not null,
     constraint servicio_pk primary key(servicio_id)
 );
