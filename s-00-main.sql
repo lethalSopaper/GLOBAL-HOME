@@ -76,3 +76,7 @@ start s-20-p-calcular-ganancia-total-rentas.sql
 prompt llamando al script s-22-p-resumen-vivienda-duenios.sql
 
 start s-22-p-resumen-vivienda-duenios.sql
+
+prompt llamando al scrip s-17-p-manejo-de-commit.sql
+
+start s-17-p-manejo-de-commit.sql

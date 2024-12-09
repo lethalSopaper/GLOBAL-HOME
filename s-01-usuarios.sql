@@ -45,18 +45,6 @@ prompt asignando roles a tu_proy_invitado
 grant rol_invitado to tu_proy_invitado;
 
 -- creando directorios
-prompt creando el directorio para la tabla externa
-begin
-    execute immediate 'create directory logs_dir as ''/unam/bd/proyecto/GLOBAL-HOME/logs''';
-exception
-    when others then
-        if sqlcode != -955 then
-            raise;
-        end if;
-end;
-/
--- Conceder permisos al usuario
-grant read, write on directory logs_dir to tu_proy_admin;
 
 prompt creando el directorio para los contratos en pdf
 begin
