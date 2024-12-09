@@ -58,6 +58,7 @@ insert into IMAGEN (num_imagen, vivienda_id, imagen) values (1, 57, EMPTY_BLOB()
 insert into IMAGEN (num_imagen, vivienda_id, imagen) values (1, 58, EMPTY_BLOB());
 insert into IMAGEN (num_imagen, vivienda_id, imagen) values (1, 59, EMPTY_BLOB());
 insert into IMAGEN (num_imagen, vivienda_id, imagen) values (1, 60, EMPTY_BLOB());
+insert into IMAGEN (num_imagen, vivienda_id, imagen) values (1, 61, EMPTY_BLOB());
 insert into IMAGEN (num_imagen, vivienda_id, imagen) values (2, 1, EMPTY_BLOB());
 insert into IMAGEN (num_imagen, vivienda_id, imagen) values (2, 2, EMPTY_BLOB());
 insert into IMAGEN (num_imagen, vivienda_id, imagen) values (2, 3, EMPTY_BLOB());

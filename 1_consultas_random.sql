@@ -84,3 +84,34 @@ from mensaje;
 select mensaje_id as "Mensajes sin respuesta"
 from mensaje
 where mensaje_respuesta_id is null;
+
+select usuario_duenio_id, count(*) as total_rentas
+from vivienda v
+join vivienda_renta vr on v.vivienda_id = vr.vivienda_renta_id
+join renta r on vr.vivienda_renta_id = r.vivienda_renta_id
+group by usuario_duenio_id
+order by total_rentas desc;
+
+-- util para pruebas
+-- alquileres
+select v.usuario_duenio_id, count(*) as total_alquileres
+from vivienda v
+join vivienda_vacaciones vv on v.vivienda_id = vv.vivienda_vacaciones_id
+join alquiler a on vv.vivienda_vacaciones_id = a.vivienda_vacaciones_id
+where v.usuario_duenio_id = 40
+group by v.usuario_duenio_id;
+-- rentas
+select usuario_duenio_id, count(*) as total_rentas
+from vivienda v
+join vivienda_renta vr on v.vivienda_id = vr.vivienda_renta_id
+join renta r on vr.vivienda_renta_id = r.vivienda_renta_id
+where usuario_duenio_id = 40
+group by usuario_duenio_id;
+-- compras
+select usuario_duenio_id, count(*) as total_pagos
+from vivienda v
+join vivienda_venta vv on v.vivienda_id = vv.vivienda_venta_id
+join compra c on vv.vivienda_venta_id = c.vivienda_venta_id
+join pago p on c.vivienda_venta_id = p.vivienda_venta_id
+where usuario_duenio_id = 40
+group by usuario_duenio_id;

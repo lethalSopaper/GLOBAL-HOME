@@ -448,3 +448,13 @@ insert into SERVICIO_VIVIENDA (servicio_vivienda_id, vivienda_id, servicio_id) v
 insert into SERVICIO_VIVIENDA (servicio_vivienda_id, vivienda_id, servicio_id) values (servicio_vivienda_seq.nextval, 8, 10);
 insert into SERVICIO_VIVIENDA (servicio_vivienda_id, vivienda_id, servicio_id) values (servicio_vivienda_seq.nextval, 9, 10);
 insert into SERVICIO_VIVIENDA (servicio_vivienda_id, vivienda_id, servicio_id) values (servicio_vivienda_seq.nextval, 10, 10);
+insert into SERVICIO_VIVIENDA (servicio_vivienda_id, vivienda_id, servicio_id) values (servicio_vivienda_seq.nextval, 61, 1);
+insert into SERVICIO_VIVIENDA (servicio_vivienda_id, vivienda_id, servicio_id) values (servicio_vivienda_seq.nextval, 61, 2);
+insert into SERVICIO_VIVIENDA (servicio_vivienda_id, vivienda_id, servicio_id) values (servicio_vivienda_seq.nextval, 61, 3);
+insert into SERVICIO_VIVIENDA (servicio_vivienda_id, vivienda_id, servicio_id) values (servicio_vivienda_seq.nextval, 61, 4);
+insert into SERVICIO_VIVIENDA (servicio_vivienda_id, vivienda_id, servicio_id) values (servicio_vivienda_seq.nextval, 61, 5);
+insert into SERVICIO_VIVIENDA (servicio_vivienda_id, vivienda_id, servicio_id) values (servicio_vivienda_seq.nextval, 61, 6);
+insert into SERVICIO_VIVIENDA (servicio_vivienda_id, vivienda_id, servicio_id) values (servicio_vivienda_seq.nextval, 61, 7);
+insert into SERVICIO_VIVIENDA (servicio_vivienda_id, vivienda_id, servicio_id) values (servicio_vivienda_seq.nextval, 61, 8);
+insert into SERVICIO_VIVIENDA (servicio_vivienda_id, vivienda_id, servicio_id) values (servicio_vivienda_seq.nextval, 61, 9);
+insert into SERVICIO_VIVIENDA (servicio_vivienda_id, vivienda_id, servicio_id) values (servicio_vivienda_seq.nextval, 61, 10);

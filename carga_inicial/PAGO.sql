@@ -24,3 +24,14 @@ insert into PAGO (num_pago, vivienda_venta_id, fecha_pago, importe, recibo) valu
 insert into PAGO (num_pago, vivienda_venta_id, fecha_pago, importe, recibo) values (8, 44, to_date('07-06-2024', 'dd-mm-yyyy'), 56380303.3, EMPTY_BLOB());
 insert into PAGO (num_pago, vivienda_venta_id, fecha_pago, importe, recibo) values (9, 44, to_date('21-06-2024', 'dd-mm-yyyy'), 56380303.3, EMPTY_BLOB());
 insert into PAGO (num_pago, vivienda_venta_id, fecha_pago, importe, recibo) values (10, 44, to_date('05-07-2024', 'dd-mm-yyyy'), 56380303.3, EMPTY_BLOB());
+-- Completado en 10 pagos
+insert into PAGO (num_pago, vivienda_venta_id, fecha_pago, importe, recibo) values (1, 61, to_date('01-08-2024', 'dd-mm-yyyy'), 87453441.1, EMPTY_BLOB());
+insert into PAGO (num_pago, vivienda_venta_id, fecha_pago, importe, recibo) values (2, 61, to_date('15-08-2024', 'dd-mm-yyyy'), 87453441.1, EMPTY_BLOB());
+insert into PAGO (num_pago, vivienda_venta_id, fecha_pago, importe, recibo) values (3, 61, to_date('29-08-2024', 'dd-mm-yyyy'), 87453441.1, EMPTY_BLOB());
+insert into PAGO (num_pago, vivienda_venta_id, fecha_pago, importe, recibo) values (4, 61, to_date('12-09-2024', 'dd-mm-yyyy'), 87453441.1, EMPTY_BLOB());
+insert into PAGO (num_pago, vivienda_venta_id, fecha_pago, importe, recibo) values (5, 61, to_date('26-09-2024', 'dd-mm-yyyy'), 87453441.1, EMPTY_BLOB());
+insert into PAGO (num_pago, vivienda_venta_id, fecha_pago, importe, recibo) values (6, 61, to_date('10-10-2024', 'dd-mm-yyyy'), 87453441.1, EMPTY_BLOB());
+insert into PAGO (num_pago, vivienda_venta_id, fecha_pago, importe, recibo) values (7, 61, to_date('24-10-2024', 'dd-mm-yyyy'), 87453441.1, EMPTY_BLOB());
+insert into PAGO (num_pago, vivienda_venta_id, fecha_pago, importe, recibo) values (8, 61, to_date('07-11-2024', 'dd-mm-yyyy'), 87453441.1, EMPTY_BLOB());
+insert into PAGO (num_pago, vivienda_venta_id, fecha_pago, importe, recibo) values (9, 61, to_date('21-11-2024', 'dd-mm-yyyy'), 87453441.1, EMPTY_BLOB());
+insert into PAGO (num_pago, vivienda_venta_id, fecha_pago, importe, recibo) values (10, 61, to_date('05-12-2024', 'dd-mm-yyyy'), 87453441.1, EMPTY_BLOB());

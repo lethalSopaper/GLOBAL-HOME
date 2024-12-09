@@ -14,6 +14,7 @@ insert into VIVIENDA_VENTA (vivienda_venta_id, num_catastral, folio_escritura, a
 insert into VIVIENDA_VENTA (vivienda_venta_id, num_catastral, folio_escritura, avaluo_propiedad, precio_inicial) values (42, '7T560918CM9TG4JV', '92RY23VP65335NY864', EMPTY_BLOB(), 102682299);
 insert into VIVIENDA_VENTA (vivienda_venta_id, num_catastral, folio_escritura, avaluo_propiedad, precio_inicial) values (43, '37T9P7W3L84CGNNI', 'JTQT7735968E7TX67W', EMPTY_BLOB(), 401632405);
 insert into VIVIENDA_VENTA (vivienda_venta_id, num_catastral, folio_escritura, avaluo_propiedad, precio_inicial) values (44, 'V32P705E9A7M5Q8J', '754975QABGYBNQ8KFZ', EMPTY_BLOB(), 563803033);
+insert into VIVIENDA_VENTA (vivienda_venta_id, num_catastral, folio_escritura, avaluo_propiedad, precio_inicial) values (61, 'N2OW10G310E48740', 'MD7L6WNF3294DO5LSF', EMPTY_BLOB(), 874534411);
 -- Inactivas
 insert into VIVIENDA_VENTA (vivienda_venta_id, num_catastral, folio_escritura, avaluo_propiedad, precio_inicial) values (45, 'N2OWJG310E48740I', 'MD7L6WNF3294NX5LSF', EMPTY_BLOB(), 874534411);
 insert into VIVIENDA_VENTA (vivienda_venta_id, num_catastral, folio_escritura, avaluo_propiedad, precio_inicial) values (46, 'H5D3OB4XO4OOJ1VF', '8459W03KBNX75FC952', EMPTY_BLOB(), 556811654);
