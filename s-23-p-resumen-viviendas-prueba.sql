@@ -82,6 +82,9 @@ begin
         join alquiler a on vv.vivienda_vacaciones_id = a.vivienda_vacaciones_id
         join encuesta e on a.alquiler_id = e.alquiler_id
         where v.usuario_duenio_id = 40;
+        if v_ganancias_alquileres is null then
+            v_ganancias_alquileres := 0;
+        end if;
         dbms_output.put_line('Verificación calificación promedio: ' || v_calificacion_promedio);
         select count(*) into v_cantidad_viviendas_renta
         from vivienda v
@@ -167,6 +170,9 @@ begin
         join alquiler a on vv.vivienda_vacaciones_id = a.vivienda_vacaciones_id
         join encuesta e on a.alquiler_id = e.alquiler_id
         where v.usuario_duenio_id = 1;
+        if v_ganancias_alquileres is null then
+            v_ganancias_alquileres := 0;
+        end if;
         dbms_output.put_line('Verificación calificación promedio: ' || v_calificacion_promedio);
         select count(*) into v_cantidad_viviendas_renta
         from vivienda v
@@ -260,6 +266,9 @@ begin
         join alquiler a on vv.vivienda_vacaciones_id = a.vivienda_vacaciones_id
         join encuesta e on a.alquiler_id = e.alquiler_id
         where v.usuario_duenio_id = 4;
+        if v_ganancias_alquileres is null then
+            v_ganancias_alquileres := 0;
+        end if;
         dbms_output.put_line('Verificación calificación promedio: ' || v_calificacion_promedio);
         select count(*) into v_cantidad_viviendas_renta
         from vivienda v

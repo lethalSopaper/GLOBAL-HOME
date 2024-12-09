@@ -100,3 +100,6 @@ where tabla_afectada = 'ALQUILER'
 and accion = 'UPDATE';
 
 -- CONSULTA 6:
+/* Se desea realizar una auditoria a los usuarios que han modimifado la tabla alquiler, 
+se necesita saber el nombre, apellido paterno, apellido materno (de existir) y el email de los usuarios.
+*

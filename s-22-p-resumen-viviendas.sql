@@ -66,6 +66,10 @@ begin
     join alquiler a on vv.vivienda_vacaciones_id = a.vivienda_vacaciones_id
     join encuesta e on a.alquiler_id = e.alquiler_id
     where v.usuario_duenio_id = v_usuario_duenio_id;
+    -- Si es nulo se asigna 0
+    if v_calificacion_promedio is null then
+        v_calificacion_promedio := 0;
+    end if;
     dbms_output.put_line('Calificación promedio de los alquileres: ' || v_calificacion_promedio);
     -- Cantidad de viviendas de renta
     select count(*) into v_cantidad_viviendas_renta
