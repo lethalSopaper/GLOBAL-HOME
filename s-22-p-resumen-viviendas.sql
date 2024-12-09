@@ -29,6 +29,8 @@ as
     -- variable para almacenar las ganancias totales
     v_ganancias_totales number := 0;
     -- cursor para seleccionar todas las viviendas renta de un dueño
+    v_ultimo_resumen varchar2(1000);
+    v_file utl_file.file_type;
 begin
     -- Verificar que el usuario dueño no sea nulo
     if p_usuario_duenio_id is null then
@@ -117,6 +119,12 @@ begin
     -- Se imprime el resumen
     dbms_output.put_line('Ganancias totales: ' || v_ganancias_totales);
     dbms_output.put_line('---------------------------------------------------------------------');
+    -- Se concatena el resumen
+    v_ultimo_resumen := 'Resumen de viviendas del dueño ' || v_usuario_duenio_id || chr(10) || 'Cantidad de viviendas totales: ' || v_viviendas_totales || chr(10) || 'Cantidad de viviendas de vacaciones y renta: ' || v_cantidad_viviendas_vacaciones_renta || chr(10) || 'Cantidad de viviendas de vacaciones: ' || v_cantidad_viviendas_vacaciones || chr(10) || 'Calificación promedio de los alquileres: ' || v_calificacion_promedio || chr(10) || 'Cantidad de viviendas de renta: ' || v_cantidad_viviendas_renta || chr(10) || 'Cantidad de viviendas de venta: ' || v_cantidad_viviendas_venta || chr(10) || 'Ganancias de alquileres: ' || v_ganancias_alquileres || chr(10) || 'Ganancias de rentas: ' || v_ganancias_rentas || chr(10) || 'Ganancias de compras: ' || v_ganancias_compras || chr(10) || 'Ganancias totales: ' || v_ganancias_totales;
+    -- Se ecribe el resumen en el archivo ultimo_resumen.txt
+    v_file := utl_file.fopen('INTERFAZ', 'ultimo_resumen.txt', 'w');
+    utl_file.put_line(v_file, v_ultimo_resumen);
+    utl_file.fclose(v_file);
 exception
     when no_data_found then
         raise_application_error(-20700, 'El usuario dueño no existe: ' || p_usuario_duenio_id);
