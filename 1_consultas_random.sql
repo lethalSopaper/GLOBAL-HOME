@@ -77,3 +77,10 @@ from vivienda v
 join vivienda_venta vv on v.vivienda_id = vv.vivienda_venta_id
 group by v.usuario_duenio_id
 order by total_viviendas_venta desc;
+
+select mensaje_id, fecha_envio, leido
+from mensaje;
+
+select mensaje_id as "Mensajes sin respuesta"
+from mensaje
+where mensaje_respuesta_id is null;

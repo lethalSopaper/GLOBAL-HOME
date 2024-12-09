@@ -1,3 +1,7 @@
+-- Autor: Tepal Briseño Hansel Yael y Ugartechea González Luis Antonio
+--Fecha: 07/12/2024
+--Descripción: Este procedimiento busca imprimir un resumen de calificaciones y ganancias para los dueños de viviendas teniendo en cuenta todos lo tipos de viviendas que poseen.
+
 create or replace procedure p_resumen_viviendas
 as
     -- cursor para seleccionar todas las viviendas y dueños
