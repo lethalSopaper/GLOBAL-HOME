@@ -53,7 +53,7 @@ order by veces_alquilada desc;
 CONSULTA 3:
 Se requiere saber, el identificador de la vivienda, el tipo de vivienda, la cantidad de servicios
 que ofrecen y las que sean mayores al promedio de servicios se les otorgará una recompensa.
-Se deben obtener 30 registros
+Se deben obtener 31 registros
 */
 
 select vsv.vivienda_id, vsv.es_vacaciones, vsv.es_renta, vsv.es_venta,
@@ -72,29 +72,31 @@ Se decidio que los usuarios que han rentado, alquilado y comprado una vivienda s
 insignia de oro y un descuento del 10% en su próxima actividad, se necesita saber el identificador
 del usuario, su nombre, apellido paterno, apellido materno (de existir) y el email para contactarlo.
 Con operaciones set: union, intersect, minus.
-Se deben obtener 5 registros
+Se deben obtener 3 registros
 */
 
-(select u.usuario_id, u.nombre, u.apellido_paterno, u.apellido_materno, u.email
+select u.usuario_id, u.nombre, u.apellido_paterno, u.apellido_materno, u.email
 from TU_usuario u
-join alquiler a on u.usuario_id = a.usuario_id)
+join alquiler a on u.usuario_id = a.usuario_id
 intersect
-(select u.usuario_id, u.nombre, u.apellido_paterno, u.apellido_materno, u.email
+select u.usuario_id, u.nombre, u.apellido_paterno, u.apellido_materno, u.email
 from TU_usuario u
-join renta r on u.usuario_id = r.usuario_id)
+join renta r on u.usuario_id = r.usuario_id
 intersect
-(select u.usuario_id, u.nombre, u.apellido_paterno, u.apellido_materno, u.email
+select u.usuario_id, u.nombre, u.apellido_paterno, u.apellido_materno, u.email
 from TU_usuario u
-join compra c on u.usuario_id = c.usuario_id)
+join compra c on u.usuario_id = c.usuario_id
 order by usuario_id;
 
 /* CONSULTA 5:
 (de la tabla externa logs_ext)
 Se desea saber para la todas las modificaciones de la tabla alquiler, la fecha del evento, el usuario, el detalle de la acción, el valor anterior y el valor nuevo.
 Se deben obtener 6 registros
- */
+*/
 
 select fecha_evento, usuario, accion, valor_anterior, valor_nuevo
 from logs_ext
 where tabla_afectada = 'ALQUILER'
 and accion = 'UPDATE';
+
+-- CONSULTA 6:
