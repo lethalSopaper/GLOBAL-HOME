@@ -108,10 +108,32 @@ join renta r on vr.vivienda_renta_id = r.vivienda_renta_id
 where usuario_duenio_id = 40
 group by usuario_duenio_id;
 -- compras
-select usuario_duenio_id, count(*) as total_pagos
+select usuario_duenio_id, count(*) as total_pagos, sum(p.importe) as total_pagos
 from vivienda v
 join vivienda_venta vv on v.vivienda_id = vv.vivienda_venta_id
 join compra c on vv.vivienda_venta_id = c.vivienda_venta_id
 join pago p on c.vivienda_venta_id = p.vivienda_venta_id
 where usuario_duenio_id = 40
 group by usuario_duenio_id;
+------------------
+
+select sum(trunc(months_between(r.fecha_fin, r.fecha_inicio)) * vr.renta_mensual)
+from vivienda v
+join vivienda_renta vr on v.vivienda_id = vr.vivienda_renta_id
+join renta r on vr.vivienda_renta_id = r.vivienda_renta_id
+where v.usuario_duenio_id = 40
+and r.fecha_fin is not null;
+
+select sum(trunc(months_between(sysdate, r.fecha_inicio)) * vr.renta_mensual)
+from vivienda v
+join vivienda_renta vr on v.vivienda_id = vr.vivienda_renta_id
+join renta r on vr.vivienda_renta_id = r.vivienda_renta_id
+where v.usuario_duenio_id = 40
+and r.fecha_fin is null;
+
+select usuario_duenio_id, count(*) as total_rentas
+from vivienda v
+join vivienda_renta vr on v.vivienda_id = vr.vivienda_renta_id
+join renta r on vr.vivienda_renta_id = r.vivienda_renta_id
+group by usuario_duenio_id
+order by total_rentas desc;
