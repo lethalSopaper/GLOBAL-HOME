@@ -73,38 +73,33 @@ begin
     end;
 
     begin
-        -- Este caso tiene la finalidad de probar la integridad de los datos
         dbms_output.put_line('Caso 7: prueba de integridad de datos');
-         -- Asigna el BLOB del PDF obtenido de la base de datos a la variable `v_blob`.
+         -- Asigna el BLOB del PDF
         v_blob := obtener_blob_de_pdf('bd-08-htb-practica-14.pdf');    
-        -- Crea un BLOB temporal `v_blob_from_tmp` que será utilizado para almacenar el contenido del archivo en disco.
+        -- Crea un BLOB temporal 
             dbms_lob.createtemporary(v_blob_from_tmp, true);                
-            -- Asigna la referencia al archivo en el sistema de archivos a `v_file_from_disk`.
+            -- Asigna la referencia al archivo en el sistema de archivos
             v_file_from_disk := bfilename('PDF_CONTRATO', 'bd-08-htb-practica-14.pdf');  
-            -- Abre el archivo en modo solo lectura.
+            -- modo solo lectura
             dbms_lob.fileopen(v_file_from_disk, dbms_lob.file_readonly);                 
-             -- Obtiene la longitud del archivo y la almacena en `v_length`. 
             v_length := dbms_lob.getlength(v_file_from_disk);                            
-            -- Bucle para leer el archivo en bloques de 2000 bytes y escribir en el BLOB temporal.
+            -- Bucle para leer el archivo en bloques de 2000 bytes
             while v_offset <= v_length loop
-             -- Lee un bloque de 2000 bytes desde el archivo en `v_buffer`.
+             -- Lee en bloques de 2000
                 dbms_lob.read(v_file_from_disk, v_chunk_size, v_offset, v_buffer);       
-                 -- Escribe el bloque leído en el BLOB temporal `v_blob_from_tmp`.
+                 -- Escribe el bloque en el BLOB temporal 
                 dbms_lob.writeappend(v_blob_from_tmp, v_chunk_size, v_buffer);          
                   -- Incrementa el offset en el tamaño del bloque después de cada iteración. 
                 v_offset := v_offset + v_chunk_size;                                    
             end loop;
-              -- Cierra el archivo.
             dbms_lob.fileclose(v_file_from_disk);                                      
 
-            -- Compara los BLOBs y verifica si son iguales.
             if dbms_lob.compare(v_blob, v_blob_from_tmp) = 0 then
                 dbms_output.put_line('Exito: Los BLOBs son iguales');                   
             else
                 dbms_output.put_line('Error: Los BLOBs no son iguales');                 
             end if;
 
-            -- Manejo de excepciones para capturar cualquier error durante la ejecución.
             exception
                 when others then
                     dbms_output.put_line('Error: ' || sqlerrm);                          

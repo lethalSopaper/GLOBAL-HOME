@@ -1,11 +1,11 @@
-Resumen de viviendas del dueño 40
-Cantidad de viviendas totales: 7
-Cantidad de viviendas de vacaciones y renta: 2
-Cantidad de viviendas de vacaciones: 1
-Calificación promedio de los alquileres: 3.33
-Cantidad de viviendas de renta: 3
-Cantidad de viviendas de venta: 1
-Ganancias de alquileres: 8100
-Ganancias de rentas: 1273925
-Ganancias de compras: 874534411
-Ganancias totales: 875816436
+Resumen de viviendas del dueño 4
+Cantidad de viviendas totales: 1
+Cantidad de viviendas de vacaciones y renta: 1
+Cantidad de viviendas de vacaciones: 0
+Calificación promedio de los alquileres: 3
+Cantidad de viviendas de renta: 0
+Cantidad de viviendas de venta: 0
+Ganancias de alquileres: 2100
+Ganancias de rentas: 0
+Ganancias de compras: 0
+Ganancias totales: 2100

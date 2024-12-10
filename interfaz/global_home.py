@@ -4,7 +4,7 @@ import oracledb
 
 # Function to connect to Oracle DB
 def connect() -> oracledb.Connection:
-    dsn = oracledb.makedsn("d1-bd-lug.fi.unam", 1521, service_name="htblugbd_s2.fi.unam")
+    dsn = oracledb.makedsn("d1-bd-htb.fi.unam", 1521, service_name="htblugbd_s2.fi.unam")
     username = "tu_proy_admin"
     password = "1234"
 
